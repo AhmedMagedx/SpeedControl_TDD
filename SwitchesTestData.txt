@@ -1,0 +1,22 @@
+100
+MAXIMUM	SW_RELEASED	SW_RELEASED	SW_PRESSED	30	90
+MINIMUM	SW_RELEASED	SW_PRESSED	SW_PRESSED	30	140
+MINIMUM	SW_RELEASED	SW_PRESSED	SW_RELEASED	6	140
+MINIMUM	SW_RELEASED	SW_PRESSED	SW_PRESSED	30	140
+MEDIUM	SW_RELEASED	SW_RELEASED	SW_PRESSED	30	140
+MINIMUM	SW_PRESSED	SW_RELEASED	SW_RELEASED	30	90
+MEDIUM	SW_PRESSED	SW_RELEASED	SW_RELEASED	30	10
+MINIMUM	SW_RELEASED	SW_PRESSED	SW_RELEASED	6	140
+MINIMUM	SW_RELEASED	SW_PRESSED	SW_PRESSED	30	140
+MEDIUM	SW_RELEASED	SW_RELEASED	SW_PRESSED	30	140
+
+initialSpeedState	PlusButton	MinusButton	Pressure	Timepressed	ExpectedAngle
+
+you can add as much test lines as you want following these steps: (following previous order)
+1 - copy and add test case (any testCase from the following)(in the SpeedControltest file >> InputTestCases group )
+2 - rename the test case (eg. TCx)
+3 - add the runner (eg.  RUN_TEST_CASE(InputTestCases, TCx) )(to the TEST_GROUP_RUNNER(InputTestCases))
+
+PS:
+please ignore the number at the first line it has no effect on the test cases
+it has been added for a specific purpose but now it needs to be removed.

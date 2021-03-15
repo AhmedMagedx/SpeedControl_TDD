@@ -1,0 +1,797 @@
+\hypertarget{SpeedControlTest_8c}{}\doxysection{test/\+Speed\+Control\+Module\+Test/\+Speed\+Control\+Test.c File Reference}
+\label{SpeedControlTest_8c}\index{test/SpeedControlModuleTest/SpeedControlTest.c@{test/SpeedControlModuleTest/SpeedControlTest.c}}
+{\ttfamily \#include \char`\"{}../../source/\+Speed\+Control\+Module/\+Speed\+Control\+Module.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Fake\+\_\+\+Motor\+Driver/\+Fake\+Motor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Fake\+\_\+\+Switch\+Driver/\+Fake\+Switch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../source/\+Motor\+Driver/\+Motor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../source/\+Switch\+Driver/\+Switch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../unity/unity\+\_\+fixture.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for Speed\+Control\+Test.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SpeedControlTest_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{SpeedControlTest_8c_a7a91a3d98e817096697764cccdd82c72}{SET\+\_\+\+STATE\+\_\+\+TO\+\_\+\+MIN}}
+\item 
+\#define \mbox{\hyperlink{SpeedControlTest_8c_a11b6bbbe26e04489dab492714940685f}{SET\+\_\+\+STATE\+\_\+\+TO\+\_\+\+MED}}
+\item 
+\#define \mbox{\hyperlink{SpeedControlTest_8c_ad9126c939b7b2a344e630a310b52ac62}{SET\+\_\+\+STATE\+\_\+\+TO\+\_\+\+MAX}}
+\item 
+\#define \mbox{\hyperlink{SpeedControlTest_8c_aa3bbeb5697978bb537d96e7bbf8bf556}{Current\+Angle}}~\mbox{\hyperlink{SpeedControlModule_8h_a3958baa6cabf4c33fc8433c67a051d85}{Speed\+Control\+\_\+\+Get\+Angle}}()
+\item 
+\#define \mbox{\hyperlink{SpeedControlTest_8c_a54da30e8a02f767ff0c0e8748adc0f6b}{Current\+Speed\+State}}~\mbox{\hyperlink{SpeedControlModule_8h_a3c00cc92ce5f3650f6eb99ef2052d3f0}{Speed\+Control\+\_\+\+Get\+Speed\+State}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{SpeedControlTest_8c_ab10fad896daaec54ef1e1c0e384604d8}{File\+Read\+And\+Fake\+Switch\+Arrange}} (void)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a475d2034fc03206c5650d1be813fe35a}{TEST\+\_\+\+GROUP}} (SC\+\_\+\+Get\+Speed\+State)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a8a7032f44fdb8bb47f7eca2ddad803b5}{TEST\+\_\+\+SETUP}} (SC\+\_\+\+Get\+Speed\+State)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a7a94d9eedc7c963021f6b23051b1be18}{TEST\+\_\+\+TEAR\+\_\+\+DOWN}} (SC\+\_\+\+Get\+Speed\+State)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a4f43340de96a861cdd2fb693b55786b4}{TEST}} (SC\+\_\+\+Get\+Speed\+State, Pre\+Initialization)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_aad57c6d68dfd9be20b933c80752c8244}{TEST\+\_\+\+GROUP\+\_\+\+RUNNER}} (SC\+\_\+\+Get\+Speed\+State)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a34360e00606e54a026a9adefd60d9724}{TEST\+\_\+\+GROUP}} (SC\+\_\+\+Get\+Shared\+Angle)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a031fb427c64297a6e0a88920f0089f6c}{TEST\+\_\+\+SETUP}} (SC\+\_\+\+Get\+Shared\+Angle)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_ad8d2ca495836db74f6c74a6aed9ab3bb}{TEST\+\_\+\+TEAR\+\_\+\+DOWN}} (SC\+\_\+\+Get\+Shared\+Angle)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a63e9dceb4e36552006a7103bd10b7af9}{TEST}} (SC\+\_\+\+Get\+Shared\+Angle, Pre\+Initialization)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_ac5416f949cdf59404e07098b533073e9}{TEST}} (SC\+\_\+\+Get\+Shared\+Angle, After\+Initialization)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a112848c9cd10f5c74af1618ce0e9b135}{TEST\+\_\+\+GROUP\+\_\+\+RUNNER}} (SC\+\_\+\+Get\+Shared\+Angle)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_acdd800edddef5f276526c8150d4db4e6}{TEST\+\_\+\+GROUP}} (Speed\+Control\+Init)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a5787288e346a19b3b7b4e072928d36d7}{TEST\+\_\+\+SETUP}} (Speed\+Control\+Init)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_aad9b96cc0da0a2805294b002b9985039}{TEST\+\_\+\+TEAR\+\_\+\+DOWN}} (Speed\+Control\+Init)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a9327d91f12f1a9fd8b2a09044edbac93}{TEST}} (Speed\+Control\+Init, Intial\+Values)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a3c75344985738cd551cf1bd6617d36e4}{TEST\+\_\+\+GROUP\+\_\+\+RUNNER}} (Speed\+Control\+Init)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a6017e7e99b5a90fa09f55e017920361f}{TEST\+\_\+\+GROUP}} (Speed\+Control\+Update)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_ae2812824ab9b6d848bfe873b52c7cd11}{TEST\+\_\+\+SETUP}} (Speed\+Control\+Update)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a1263b5b4b2bfad7048f2b3cc82bdc768}{TEST\+\_\+\+TEAR\+\_\+\+DOWN}} (Speed\+Control\+Update)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_af5a4ee6869ea4ff21db988b549cbf71d}{TEST}} (Speed\+Control\+Update, Read\+SW\+\_\+\+Motor\+Update\+Angle)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a6d9e1c4a2b0e53360456c2fd6cee205e}{TEST}} (Speed\+Control\+Update, N1\+State\+TC1)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_aa8f1982c463e4418f688324767879e7a}{TEST}} (Speed\+Control\+Update, N1\+State\+TC2)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a5b42f453894f4149c260a87d343f1b91}{TEST}} (Speed\+Control\+Update, N1\+State\+TC3)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_ad9bbeaf529d7da12ffc15ed7705dcea1}{TEST}} (Speed\+Control\+Update, N1\+State\+TC4)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a62783b688df334d44ef0428fd6f6a29a}{TEST}} (Speed\+Control\+Update, N1\+State\+INVALIDTC5)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a6f136496d10e6036e15b88fb0752e73c}{TEST}} (Speed\+Control\+Update, EP\+\_\+\+TC1\+\_\+\+INVALID)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a28747f3f56f6287513ad1f9d515aefa1}{TEST}} (Speed\+Control\+Update, EP\+\_\+\+TC2\+\_\+\+VALID)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a8711f44b74a04b3ca64b5dd0d07d6c4b}{TEST}} (Speed\+Control\+Update, BVA\+\_\+\+TC1\+\_\+\+INVALID)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a54241e9d791845aa3bed937487d08cd6}{TEST}} (Speed\+Control\+Update, BVA\+\_\+\+TC2\+\_\+\+VALID)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_ae817c41fa5c115da9b6c2d2ab054b027}{TEST\+\_\+\+GROUP\+\_\+\+RUNNER}} (Speed\+Control\+Update)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a4e9eff0eb3b42d5da6f5410e97770341}{TEST\+\_\+\+GROUP}} (Input\+Test\+Cases)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_af9798e55c767cdad6e045c3919a99625}{TEST\+\_\+\+SETUP}} (Input\+Test\+Cases)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a951bff827e75fd59fc1aef4140608968}{TEST\+\_\+\+TEAR\+\_\+\+DOWN}} (Input\+Test\+Cases)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a4e258df18787bbce3ad960ec20a42a26}{TEST}} (Input\+Test\+Cases, TC1)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_aee0462db21d99fc827f6b3b1b8328959}{TEST}} (Input\+Test\+Cases, TC2)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a808c7262329a63ef2d6abed93321fa1f}{TEST}} (Input\+Test\+Cases, TC3)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_ae5f7380c531bc72b0016ee53cfc303fc}{TEST}} (Input\+Test\+Cases, TC4)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a1dd0119b0d71b14abdec3fbfcf8e90a6}{TEST}} (Input\+Test\+Cases, TC5)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_aa76c6e802cd48f2917f9a4a113a8406d}{TEST}} (Input\+Test\+Cases, TC6)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a4943a0b9ca051d9858726b71e520c8d4}{TEST}} (Input\+Test\+Cases, TC7)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_aaee10a06c0d2824d3859be95c3471957}{TEST}} (Input\+Test\+Cases, TC8)
+\item 
+\mbox{\hyperlink{SpeedControlTest_8c_a6e3d8bff0314a2e0efb156cf01b2f717}{TEST\+\_\+\+GROUP\+\_\+\+RUNNER}} (Input\+Test\+Cases)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{SpeedControlTest_8c_aa3bbeb5697978bb537d96e7bbf8bf556}\label{SpeedControlTest_8c_aa3bbeb5697978bb537d96e7bbf8bf556}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!CurrentAngle@{CurrentAngle}}
+\index{CurrentAngle@{CurrentAngle}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{CurrentAngle}{CurrentAngle}}
+{\footnotesize\ttfamily \#define Current\+Angle~\mbox{\hyperlink{SpeedControlModule_8h_a3958baa6cabf4c33fc8433c67a051d85}{Speed\+Control\+\_\+\+Get\+Angle}}()}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a54da30e8a02f767ff0c0e8748adc0f6b}\label{SpeedControlTest_8c_a54da30e8a02f767ff0c0e8748adc0f6b}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!CurrentSpeedState@{CurrentSpeedState}}
+\index{CurrentSpeedState@{CurrentSpeedState}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{CurrentSpeedState}{CurrentSpeedState}}
+{\footnotesize\ttfamily \#define Current\+Speed\+State~\mbox{\hyperlink{SpeedControlModule_8h_a3c00cc92ce5f3650f6eb99ef2052d3f0}{Speed\+Control\+\_\+\+Get\+Speed\+State}}()}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_ad9126c939b7b2a344e630a310b52ac62}\label{SpeedControlTest_8c_ad9126c939b7b2a344e630a310b52ac62}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!SET\_STATE\_TO\_MAX@{SET\_STATE\_TO\_MAX}}
+\index{SET\_STATE\_TO\_MAX@{SET\_STATE\_TO\_MAX}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{SET\_STATE\_TO\_MAX}{SET\_STATE\_TO\_MAX}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+STATE\+\_\+\+TO\+\_\+\+MAX}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                        \mbox{\hyperlink{SpeedControlModule_8c_a34b7e86d8ab37a9176c2dce6783e37fd}{SpeedControl\_init}}();\(\backslash\)}
+\DoxyCodeLine{                        FAKE\_SW\_setSwState(\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa6780c6e6d1cdb21fe9193681a6e228d5}{PV\_switch}}, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7ae07e75c91d96406b9a19d47ac31518e9}{SW\_PRESSED}});\(\backslash\)}
+\DoxyCodeLine{                        FAKE\_SW\_setSwState(\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208faa14fe4aabe0e3373e09a5dd8ce57a5ca}{MV\_switch}}, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7aa6ecace857f42b47cc7d19d25087caf3}{SW\_RELEASED}});\(\backslash\)}
+\DoxyCodeLine{                        FAKE\_SW\_setSwState(\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa8a0492d8d67dcbf1a2c83adcf7b7a00e}{P\_switch}}, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7aa6ecace857f42b47cc7d19d25087caf3}{SW\_RELEASED}});\(\backslash\)}
+\DoxyCodeLine{                        SpeedControl\_update()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{SpeedControlTest_8c_a11b6bbbe26e04489dab492714940685f}\label{SpeedControlTest_8c_a11b6bbbe26e04489dab492714940685f}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!SET\_STATE\_TO\_MED@{SET\_STATE\_TO\_MED}}
+\index{SET\_STATE\_TO\_MED@{SET\_STATE\_TO\_MED}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{SET\_STATE\_TO\_MED}{SET\_STATE\_TO\_MED}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+STATE\+\_\+\+TO\+\_\+\+MED}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                        \mbox{\hyperlink{SpeedControlModule_8c_a34b7e86d8ab37a9176c2dce6783e37fd}{SpeedControl\_init}}();\(\backslash\)}
+\DoxyCodeLine{                        SpeedControl\_update()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{SpeedControlTest_8c_a7a91a3d98e817096697764cccdd82c72}\label{SpeedControlTest_8c_a7a91a3d98e817096697764cccdd82c72}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!SET\_STATE\_TO\_MIN@{SET\_STATE\_TO\_MIN}}
+\index{SET\_STATE\_TO\_MIN@{SET\_STATE\_TO\_MIN}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{SET\_STATE\_TO\_MIN}{SET\_STATE\_TO\_MIN}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+STATE\+\_\+\+TO\+\_\+\+MIN}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                        \mbox{\hyperlink{SpeedControlModule_8c_a34b7e86d8ab37a9176c2dce6783e37fd}{SpeedControl\_init}}();\(\backslash\)}
+\DoxyCodeLine{                        FAKE\_SW\_setSwState(\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa6780c6e6d1cdb21fe9193681a6e228d5}{PV\_switch}}, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7aa6ecace857f42b47cc7d19d25087caf3}{SW\_RELEASED}});\(\backslash\)}
+\DoxyCodeLine{                        FAKE\_SW\_setSwState(\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208faa14fe4aabe0e3373e09a5dd8ce57a5ca}{MV\_switch}}, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7ae07e75c91d96406b9a19d47ac31518e9}{SW\_PRESSED}} );\(\backslash\)}
+\DoxyCodeLine{                        FAKE\_SW\_setSwState(\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa8a0492d8d67dcbf1a2c83adcf7b7a00e}{P\_switch}},  \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7aa6ecace857f42b47cc7d19d25087caf3}{SW\_RELEASED}});\(\backslash\)}
+\DoxyCodeLine{                        SpeedControl\_update()}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{SpeedControlTest_8c_ab10fad896daaec54ef1e1c0e384604d8}\label{SpeedControlTest_8c_ab10fad896daaec54ef1e1c0e384604d8}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!FileReadAndFakeSwitchArrange@{FileReadAndFakeSwitchArrange}}
+\index{FileReadAndFakeSwitchArrange@{FileReadAndFakeSwitchArrange}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{FileReadAndFakeSwitchArrange()}{FileReadAndFakeSwitchArrange()}}
+{\footnotesize\ttfamily void File\+Read\+And\+Fake\+Switch\+Arrange (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a4e258df18787bbce3ad960ec20a42a26}\label{SpeedControlTest_8c_a4e258df18787bbce3ad960ec20a42a26}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Input\+Test\+Cases}]{,  }\item[{TC1}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_aee0462db21d99fc827f6b3b1b8328959}\label{SpeedControlTest_8c_aee0462db21d99fc827f6b3b1b8328959}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Input\+Test\+Cases}]{,  }\item[{TC2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a808c7262329a63ef2d6abed93321fa1f}\label{SpeedControlTest_8c_a808c7262329a63ef2d6abed93321fa1f}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Input\+Test\+Cases}]{,  }\item[{TC3}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_ae5f7380c531bc72b0016ee53cfc303fc}\label{SpeedControlTest_8c_ae5f7380c531bc72b0016ee53cfc303fc}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Input\+Test\+Cases}]{,  }\item[{TC4}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a1dd0119b0d71b14abdec3fbfcf8e90a6}\label{SpeedControlTest_8c_a1dd0119b0d71b14abdec3fbfcf8e90a6}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Input\+Test\+Cases}]{,  }\item[{TC5}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_aa76c6e802cd48f2917f9a4a113a8406d}\label{SpeedControlTest_8c_aa76c6e802cd48f2917f9a4a113a8406d}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Input\+Test\+Cases}]{,  }\item[{TC6}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a4943a0b9ca051d9858726b71e520c8d4}\label{SpeedControlTest_8c_a4943a0b9ca051d9858726b71e520c8d4}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Input\+Test\+Cases}]{,  }\item[{TC7}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_aaee10a06c0d2824d3859be95c3471957}\label{SpeedControlTest_8c_aaee10a06c0d2824d3859be95c3471957}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Input\+Test\+Cases}]{,  }\item[{TC8}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_ac5416f949cdf59404e07098b533073e9}\label{SpeedControlTest_8c_ac5416f949cdf59404e07098b533073e9}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{SC\+\_\+\+Get\+Shared\+Angle}]{,  }\item[{After\+Initialization}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{SpeedControlTest_8c_ac5416f949cdf59404e07098b533073e9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlTest_8c_a63e9dceb4e36552006a7103bd10b7af9}\label{SpeedControlTest_8c_a63e9dceb4e36552006a7103bd10b7af9}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{SC\+\_\+\+Get\+Shared\+Angle}]{,  }\item[{Pre\+Initialization}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: SC module is not initialized}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: Speed\+Control\+\_\+\+Get\+Angle}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: the return should be th pre\+\_\+initialization value 0}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{SpeedControlTest_8c_a63e9dceb4e36552006a7103bd10b7af9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlTest_8c_a4f43340de96a861cdd2fb693b55786b4}\label{SpeedControlTest_8c_a4f43340de96a861cdd2fb693b55786b4}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [11/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{SC\+\_\+\+Get\+Speed\+State}]{,  }\item[{Pre\+Initialization}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: SC module is not initialized}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: Speed\+Control\+\_\+\+Get\+Speed\+State}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: the return should be th pre\+\_\+initialization values MINIMUM}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{SpeedControlTest_8c_a4f43340de96a861cdd2fb693b55786b4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlTest_8c_a9327d91f12f1a9fd8b2a09044edbac93}\label{SpeedControlTest_8c_a9327d91f12f1a9fd8b2a09044edbac93}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [12/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Speed\+Control\+Init}]{,  }\item[{Intial\+Values}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: SC module is not initialized}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: Speed\+Control\+\_\+init}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: Speed\+State and Angle should be the default values MEDIUM and 90}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{SpeedControlTest_8c_a9327d91f12f1a9fd8b2a09044edbac93_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlTest_8c_a8711f44b74a04b3ca64b5dd0d07d6c4b}\label{SpeedControlTest_8c_a8711f44b74a04b3ca64b5dd0d07d6c4b}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [13/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{,  }\item[{BVA\+\_\+\+TC1\+\_\+\+INVALID}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: p pressed \& time = 143}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should MEDIUM, 90}
+
+\end{DoxyParagraph}
+\mbox{\Hypertarget{SpeedControlTest_8c_a54241e9d791845aa3bed937487d08cd6}\label{SpeedControlTest_8c_a54241e9d791845aa3bed937487d08cd6}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [14/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{,  }\item[{BVA\+\_\+\+TC2\+\_\+\+VALID}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: state is MAXIMUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: p pressed \& time = 30 }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should MEDIUM, 90}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: p pressed \& time = 30 }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should MINIMUM, 140}
+
+\end{DoxyParagraph}
+\mbox{\Hypertarget{SpeedControlTest_8c_a6f136496d10e6036e15b88fb0752e73c}\label{SpeedControlTest_8c_a6f136496d10e6036e15b88fb0752e73c}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [15/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{,  }\item[{EP\+\_\+\+TC1\+\_\+\+INVALID}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{EP + BVA \+:}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Time input\+: Valid range\+: from 30 to max (255 / u8) and from (0) to 29}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{invalid range\+: from -\/INF to -\/1 and from 256 to inf}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{pressed switch input\+: Valid range\+: from 0 to 3 $>$$>$ +v, -\/v, p, NONE}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{invalid range\+: from -\/1 to -\/INFINITY}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{invalid range\+: from 4 to INFINITY}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: PlusV pressed}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should MEDIUM, 90}
+
+\end{DoxyParagraph}
+\mbox{\Hypertarget{SpeedControlTest_8c_a28747f3f56f6287513ad1f9d515aefa1}\label{SpeedControlTest_8c_a28747f3f56f6287513ad1f9d515aefa1}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [16/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{,  }\item[{EP\+\_\+\+TC2\+\_\+\+VALID}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: p pressed \& time = 143}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should MINIMUM, 140}
+
+\end{DoxyParagraph}
+\mbox{\Hypertarget{SpeedControlTest_8c_a62783b688df334d44ef0428fd6f6a29a}\label{SpeedControlTest_8c_a62783b688df334d44ef0428fd6f6a29a}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [17/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{,  }\item[{N1\+State\+INVALIDTC5}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+:}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MAXIMUM, 10}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MINIMUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: MinusV pressed or P pressed \& time $>$ 30}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should MINIMUM, 140}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MAXIMUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: PlusV pressed}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should MAXIMUM, 10}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{SpeedControlTest_8c_a62783b688df334d44ef0428fd6f6a29a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlTest_8c_a6d9e1c4a2b0e53360456c2fd6cee205e}\label{SpeedControlTest_8c_a6d9e1c4a2b0e53360456c2fd6cee205e}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [18/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{,  }\item[{N1\+State\+TC1}]{ }\end{DoxyParamCaption})}
+
+1-\/N state coverage $>$$>$ 4 Test Cases\+: 1 -\/ MED $>$ MIN $>$ MED $>$ MIN. 2 -\/ MED $>$ MIN $>$ MED $>$ MAX. 3 -\/ MED $>$ MAX $>$ MED $>$ MIN. 4 -\/ MED $>$ MAX $>$ MED $>$ MAX. \begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: Speed\+Control\+\_\+\+Get\+Speed\+State}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: angle should contain the default value 90}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: MinusV pressed}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MINIMUM, 140}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MINIMUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: PlusV pressed}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MEDIUM, 90}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: P pressed \& time $>$= 30}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MINIMUM, 140}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{SpeedControlTest_8c_a6d9e1c4a2b0e53360456c2fd6cee205e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlTest_8c_aa8f1982c463e4418f688324767879e7a}\label{SpeedControlTest_8c_aa8f1982c463e4418f688324767879e7a}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [19/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{,  }\item[{N1\+State\+TC2}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MEDIUM, 90}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: MinusV pressed }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MINIMUM, 140}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MINIMUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: PlusV pressed }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MEDIUM, 90}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: PlusV pressed }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MAXIMUM, 10}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{SpeedControlTest_8c_aa8f1982c463e4418f688324767879e7a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlTest_8c_a5b42f453894f4149c260a87d343f1b91}\label{SpeedControlTest_8c_a5b42f453894f4149c260a87d343f1b91}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [20/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{,  }\item[{N1\+State\+TC3}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MEDIUM, 90}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: PlusV pressed }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MAXIMUM, 10}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MAXIMUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: PlusV pressed }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MEDIUM, 90}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: PlusV pressed }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MINIMUM, 140}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{SpeedControlTest_8c_a5b42f453894f4149c260a87d343f1b91_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlTest_8c_ad9bbeaf529d7da12ffc15ed7705dcea1}\label{SpeedControlTest_8c_ad9bbeaf529d7da12ffc15ed7705dcea1}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [21/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{,  }\item[{N1\+State\+TC4}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MEDIUM, 90}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: PlusV pressed }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MAXIMUM, 10}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MAXIMUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: PlusV pressed }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MEDIUM, 90}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Given \+: state is MEDIUM}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: PlusV pressed }
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: values should be MAXIMUM, 10}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{SpeedControlTest_8c_ad9bbeaf529d7da12ffc15ed7705dcea1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlTest_8c_af5a4ee6869ea4ff21db988b549cbf71d}\label{SpeedControlTest_8c_af5a4ee6869ea4ff21db988b549cbf71d}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [22/22]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{,  }\item[{Read\+SW\+\_\+\+Motor\+Update\+Angle}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: SC module is not initialized}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: get the pressed switch (NONE), then update the SC and motor}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: the file should contain the default value 90}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SpeedControlTest_8c_af5a4ee6869ea4ff21db988b549cbf71d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlTest_8c_a4e9eff0eb3b42d5da6f5410e97770341}\label{SpeedControlTest_8c_a4e9eff0eb3b42d5da6f5410e97770341}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_GROUP@{TEST\_GROUP}}
+\index{TEST\_GROUP@{TEST\_GROUP}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP()}{TEST\_GROUP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+GROUP (\begin{DoxyParamCaption}\item[{Input\+Test\+Cases}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a34360e00606e54a026a9adefd60d9724}\label{SpeedControlTest_8c_a34360e00606e54a026a9adefd60d9724}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_GROUP@{TEST\_GROUP}}
+\index{TEST\_GROUP@{TEST\_GROUP}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP()}{TEST\_GROUP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+GROUP (\begin{DoxyParamCaption}\item[{SC\+\_\+\+Get\+Shared\+Angle}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a475d2034fc03206c5650d1be813fe35a}\label{SpeedControlTest_8c_a475d2034fc03206c5650d1be813fe35a}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_GROUP@{TEST\_GROUP}}
+\index{TEST\_GROUP@{TEST\_GROUP}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP()}{TEST\_GROUP()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+GROUP (\begin{DoxyParamCaption}\item[{SC\+\_\+\+Get\+Speed\+State}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_acdd800edddef5f276526c8150d4db4e6}\label{SpeedControlTest_8c_acdd800edddef5f276526c8150d4db4e6}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_GROUP@{TEST\_GROUP}}
+\index{TEST\_GROUP@{TEST\_GROUP}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP()}{TEST\_GROUP()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+GROUP (\begin{DoxyParamCaption}\item[{Speed\+Control\+Init}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a6017e7e99b5a90fa09f55e017920361f}\label{SpeedControlTest_8c_a6017e7e99b5a90fa09f55e017920361f}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_GROUP@{TEST\_GROUP}}
+\index{TEST\_GROUP@{TEST\_GROUP}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP()}{TEST\_GROUP()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+GROUP (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a6e3d8bff0314a2e0efb156cf01b2f717}\label{SpeedControlTest_8c_a6e3d8bff0314a2e0efb156cf01b2f717}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}}
+\index{TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP\_RUNNER()}{TEST\_GROUP\_RUNNER()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+GROUP\+\_\+\+RUNNER (\begin{DoxyParamCaption}\item[{Input\+Test\+Cases}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a112848c9cd10f5c74af1618ce0e9b135}\label{SpeedControlTest_8c_a112848c9cd10f5c74af1618ce0e9b135}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}}
+\index{TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP\_RUNNER()}{TEST\_GROUP\_RUNNER()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+GROUP\+\_\+\+RUNNER (\begin{DoxyParamCaption}\item[{SC\+\_\+\+Get\+Shared\+Angle}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_aad57c6d68dfd9be20b933c80752c8244}\label{SpeedControlTest_8c_aad57c6d68dfd9be20b933c80752c8244}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}}
+\index{TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP\_RUNNER()}{TEST\_GROUP\_RUNNER()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+GROUP\+\_\+\+RUNNER (\begin{DoxyParamCaption}\item[{SC\+\_\+\+Get\+Speed\+State}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a3c75344985738cd551cf1bd6617d36e4}\label{SpeedControlTest_8c_a3c75344985738cd551cf1bd6617d36e4}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}}
+\index{TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP\_RUNNER()}{TEST\_GROUP\_RUNNER()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+GROUP\+\_\+\+RUNNER (\begin{DoxyParamCaption}\item[{Speed\+Control\+Init}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_ae817c41fa5c115da9b6c2d2ab054b027}\label{SpeedControlTest_8c_ae817c41fa5c115da9b6c2d2ab054b027}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}}
+\index{TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP\_RUNNER()}{TEST\_GROUP\_RUNNER()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+GROUP\+\_\+\+RUNNER (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_af9798e55c767cdad6e045c3919a99625}\label{SpeedControlTest_8c_af9798e55c767cdad6e045c3919a99625}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_SETUP@{TEST\_SETUP}}
+\index{TEST\_SETUP@{TEST\_SETUP}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_SETUP()}{TEST\_SETUP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+SETUP (\begin{DoxyParamCaption}\item[{Input\+Test\+Cases}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{SpeedControlTest_8c_af9798e55c767cdad6e045c3919a99625_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlTest_8c_a031fb427c64297a6e0a88920f0089f6c}\label{SpeedControlTest_8c_a031fb427c64297a6e0a88920f0089f6c}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_SETUP@{TEST\_SETUP}}
+\index{TEST\_SETUP@{TEST\_SETUP}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_SETUP()}{TEST\_SETUP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+SETUP (\begin{DoxyParamCaption}\item[{SC\+\_\+\+Get\+Shared\+Angle}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a8a7032f44fdb8bb47f7eca2ddad803b5}\label{SpeedControlTest_8c_a8a7032f44fdb8bb47f7eca2ddad803b5}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_SETUP@{TEST\_SETUP}}
+\index{TEST\_SETUP@{TEST\_SETUP}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_SETUP()}{TEST\_SETUP()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+SETUP (\begin{DoxyParamCaption}\item[{SC\+\_\+\+Get\+Speed\+State}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a5787288e346a19b3b7b4e072928d36d7}\label{SpeedControlTest_8c_a5787288e346a19b3b7b4e072928d36d7}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_SETUP@{TEST\_SETUP}}
+\index{TEST\_SETUP@{TEST\_SETUP}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_SETUP()}{TEST\_SETUP()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+SETUP (\begin{DoxyParamCaption}\item[{Speed\+Control\+Init}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{SpeedControlTest_8c_a5787288e346a19b3b7b4e072928d36d7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlTest_8c_ae2812824ab9b6d848bfe873b52c7cd11}\label{SpeedControlTest_8c_ae2812824ab9b6d848bfe873b52c7cd11}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_SETUP@{TEST\_SETUP}}
+\index{TEST\_SETUP@{TEST\_SETUP}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_SETUP()}{TEST\_SETUP()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+SETUP (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{SpeedControlTest_8c_ae2812824ab9b6d848bfe873b52c7cd11_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlTest_8c_a951bff827e75fd59fc1aef4140608968}\label{SpeedControlTest_8c_a951bff827e75fd59fc1aef4140608968}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}}
+\index{TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_TEAR\_DOWN()}{TEST\_TEAR\_DOWN()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+TEAR\+\_\+\+DOWN (\begin{DoxyParamCaption}\item[{Input\+Test\+Cases}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_ad8d2ca495836db74f6c74a6aed9ab3bb}\label{SpeedControlTest_8c_ad8d2ca495836db74f6c74a6aed9ab3bb}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}}
+\index{TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_TEAR\_DOWN()}{TEST\_TEAR\_DOWN()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+TEAR\+\_\+\+DOWN (\begin{DoxyParamCaption}\item[{SC\+\_\+\+Get\+Shared\+Angle}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a7a94d9eedc7c963021f6b23051b1be18}\label{SpeedControlTest_8c_a7a94d9eedc7c963021f6b23051b1be18}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}}
+\index{TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_TEAR\_DOWN()}{TEST\_TEAR\_DOWN()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+TEAR\+\_\+\+DOWN (\begin{DoxyParamCaption}\item[{SC\+\_\+\+Get\+Speed\+State}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_aad9b96cc0da0a2805294b002b9985039}\label{SpeedControlTest_8c_aad9b96cc0da0a2805294b002b9985039}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}}
+\index{TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_TEAR\_DOWN()}{TEST\_TEAR\_DOWN()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+TEAR\+\_\+\+DOWN (\begin{DoxyParamCaption}\item[{Speed\+Control\+Init}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{SpeedControlTest_8c_a1263b5b4b2bfad7048f2b3cc82bdc768}\label{SpeedControlTest_8c_a1263b5b4b2bfad7048f2b3cc82bdc768}} 
+\index{SpeedControlTest.c@{SpeedControlTest.c}!TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}}
+\index{TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}!SpeedControlTest.c@{SpeedControlTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_TEAR\_DOWN()}{TEST\_TEAR\_DOWN()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily TEST\+\_\+\+TEAR\+\_\+\+DOWN (\begin{DoxyParamCaption}\item[{Speed\+Control\+Update}]{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="test\Fake_MotorDriver\FakeMotor.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1157" topLine="42" />
+		</Cursor>
+	</File>
+	<File name="test\Fake_SwitchDriver\FakeSwitchTest.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1186" topLine="46" />
+		</Cursor>
+	</File>
+	<File name="source\MotorDriver\Motor.c" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1037" topLine="27" />
+		</Cursor>
+	</File>
+	<File name="test\Fake_MotorDriver\FakeMotorTest.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="-6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1518" topLine="31" />
+		</Cursor>
+	</File>
+	<File name="source\SpeedControlModule\SpeedControlModule.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="140" topLine="1" />
+		</Cursor>
+	</File>
+	<File name="test\Fake_SwitchDriver\FakeSwitch.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="608" topLine="14" />
+		</Cursor>
+	</File>
+	<File name="source\MotorDriver\Motor.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="110" topLine="2" />
+		</Cursor>
+	</File>
+	<File name="test\Fake_MotorDriver\FakeMotor.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="280" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="test\unity\unity_fixture.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1031" topLine="28" />
+		</Cursor>
+	</File>
+	<File name="test\SpeedControlModuleTest\SpeedControlTest.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="-6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="41390" topLine="1408" />
+		</Cursor>
+	</File>
+	<File name="source\main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1399" topLine="56" />
+		</Cursor>
+	</File>
+	<File name="source\SpeedControlModule\SpeedControlModule.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="-3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3000" topLine="119" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

@@ -1,0 +1,6 @@
+<map id="TEST_SETUP" name="TEST_SETUP">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,108,83"/>
+<area shape="rect" id="node2" href="$FakeMotor_8c.html#abaabd4924c203978490c8d1d4f594a57" title=" " alt="" coords="156,5,295,32"/>
+<area shape="rect" id="node3" href="$FakeSwitch_8c.html#ac2822f6df5fba90c6ab0a7f92071dcae" title=" " alt="" coords="170,56,281,83"/>
+<area shape="rect" id="node4" href="$SpeedControlModule_8c.html#a34b7e86d8ab37a9176c2dce6783e37fd" title="the module initialization to the defaults." alt="" coords="157,107,294,133"/>
+</map>

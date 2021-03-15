@@ -1,0 +1,142 @@
+\hypertarget{Switch_8h}{}\doxysection{source/\+Switch\+Driver/\+Switch.h File Reference}
+\label{Switch_8h}\index{source/SwitchDriver/Switch.h@{source/SwitchDriver/Switch.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Switch_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} \{ \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7a7558c66a095c85041eef38055208c5a7}{SW\+\_\+\+PREPRESSED}}
+, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7ae07e75c91d96406b9a19d47ac31518e9}{SW\+\_\+\+PRESSED}}
+, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7ac753942537d91ed231bfa23d59adb412}{SW\+\_\+\+PRERELEASED}}
+, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7aa6ecace857f42b47cc7d19d25087caf3}{SW\+\_\+\+RELEASED}}
+ \}
+\item 
+enum \mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208f}{SWITCH\+\_\+\+NAME\+\_\+t}} \{ \mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa6780c6e6d1cdb21fe9193681a6e228d5}{PV\+\_\+switch}}
+, \mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208faa14fe4aabe0e3373e09a5dd8ce57a5ca}{MV\+\_\+switch}}
+, \mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa8a0492d8d67dcbf1a2c83adcf7b7a00e}{P\+\_\+switch}}
+, \mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fac157bdf0b85a40d2619cbc8bc1ae5fe2}{NONE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{Switch_8h_a3b94062a0ac3d11c79e06c906a857aa5}{SWITCH\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em the initialization function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Switch_8h_ae3a2d4e5e2a907f03ab8a41e833682f2}{SWITCH\+\_\+update}} (void)
+\begin{DoxyCompactList}\small\item\em the periodic function of the switch it used to update the switch states \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208f}{SWITCH\+\_\+\+NAME\+\_\+t}}($\ast$ \mbox{\hyperlink{Switch_8h_a6a40c164e7798f44e2e7e1fbac1e69a3}{SWITCH\+\_\+\+Get\+Pressed\+Switch}} )(void)
+\item 
+unsigned char($\ast$ \mbox{\hyperlink{Switch_8h_a19fe88ca4cbb06088cf2f099d761c9d1}{SWITCH\+\_\+get\+Time\+Pressed}} )(void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208f}\label{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208f}} 
+\index{Switch.h@{Switch.h}!SWITCH\_NAME\_t@{SWITCH\_NAME\_t}}
+\index{SWITCH\_NAME\_t@{SWITCH\_NAME\_t}!Switch.h@{Switch.h}}
+\doxysubsubsection{\texorpdfstring{SWITCH\_NAME\_t}{SWITCH\_NAME\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208f}{SWITCH\+\_\+\+NAME\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PV\_switch@{PV\_switch}!Switch.h@{Switch.h}}\index{Switch.h@{Switch.h}!PV\_switch@{PV\_switch}}}\mbox{\Hypertarget{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa6780c6e6d1cdb21fe9193681a6e228d5}\label{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa6780c6e6d1cdb21fe9193681a6e228d5}} 
+PV\+\_\+switch&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MV\_switch@{MV\_switch}!Switch.h@{Switch.h}}\index{Switch.h@{Switch.h}!MV\_switch@{MV\_switch}}}\mbox{\Hypertarget{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208faa14fe4aabe0e3373e09a5dd8ce57a5ca}\label{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208faa14fe4aabe0e3373e09a5dd8ce57a5ca}} 
+MV\+\_\+switch&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\_switch@{P\_switch}!Switch.h@{Switch.h}}\index{Switch.h@{Switch.h}!P\_switch@{P\_switch}}}\mbox{\Hypertarget{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa8a0492d8d67dcbf1a2c83adcf7b7a00e}\label{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa8a0492d8d67dcbf1a2c83adcf7b7a00e}} 
+P\+\_\+switch&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!Switch.h@{Switch.h}}\index{Switch.h@{Switch.h}!NONE@{NONE}}}\mbox{\Hypertarget{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fac157bdf0b85a40d2619cbc8bc1ae5fe2}\label{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fac157bdf0b85a40d2619cbc8bc1ae5fe2}} 
+NONE&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{Switch_8h_add2c37d13e3ac54d516471310b237ac7}\label{Switch_8h_add2c37d13e3ac54d516471310b237ac7}} 
+\index{Switch.h@{Switch.h}!SWITCH\_STATE\_t@{SWITCH\_STATE\_t}}
+\index{SWITCH\_STATE\_t@{SWITCH\_STATE\_t}!Switch.h@{Switch.h}}
+\doxysubsubsection{\texorpdfstring{SWITCH\_STATE\_t}{SWITCH\_STATE\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SW\_PREPRESSED@{SW\_PREPRESSED}!Switch.h@{Switch.h}}\index{Switch.h@{Switch.h}!SW\_PREPRESSED@{SW\_PREPRESSED}}}\mbox{\Hypertarget{Switch_8h_add2c37d13e3ac54d516471310b237ac7a7558c66a095c85041eef38055208c5a7}\label{Switch_8h_add2c37d13e3ac54d516471310b237ac7a7558c66a095c85041eef38055208c5a7}} 
+SW\+\_\+\+PREPRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SW\_PRESSED@{SW\_PRESSED}!Switch.h@{Switch.h}}\index{Switch.h@{Switch.h}!SW\_PRESSED@{SW\_PRESSED}}}\mbox{\Hypertarget{Switch_8h_add2c37d13e3ac54d516471310b237ac7ae07e75c91d96406b9a19d47ac31518e9}\label{Switch_8h_add2c37d13e3ac54d516471310b237ac7ae07e75c91d96406b9a19d47ac31518e9}} 
+SW\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SW\_PRERELEASED@{SW\_PRERELEASED}!Switch.h@{Switch.h}}\index{Switch.h@{Switch.h}!SW\_PRERELEASED@{SW\_PRERELEASED}}}\mbox{\Hypertarget{Switch_8h_add2c37d13e3ac54d516471310b237ac7ac753942537d91ed231bfa23d59adb412}\label{Switch_8h_add2c37d13e3ac54d516471310b237ac7ac753942537d91ed231bfa23d59adb412}} 
+SW\+\_\+\+PRERELEASED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SW\_RELEASED@{SW\_RELEASED}!Switch.h@{Switch.h}}\index{Switch.h@{Switch.h}!SW\_RELEASED@{SW\_RELEASED}}}\mbox{\Hypertarget{Switch_8h_add2c37d13e3ac54d516471310b237ac7aa6ecace857f42b47cc7d19d25087caf3}\label{Switch_8h_add2c37d13e3ac54d516471310b237ac7aa6ecace857f42b47cc7d19d25087caf3}} 
+SW\+\_\+\+RELEASED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Switch_8h_a3b94062a0ac3d11c79e06c906a857aa5}\label{Switch_8h_a3b94062a0ac3d11c79e06c906a857aa5}} 
+\index{Switch.h@{Switch.h}!SWITCH\_init@{SWITCH\_init}}
+\index{SWITCH\_init@{SWITCH\_init}!Switch.h@{Switch.h}}
+\doxysubsubsection{\texorpdfstring{SWITCH\_init()}{SWITCH\_init()}}
+{\footnotesize\ttfamily void SWITCH\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+the initialization function 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{Switch_8h_a3b94062a0ac3d11c79e06c906a857aa5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Switch_8h_ae3a2d4e5e2a907f03ab8a41e833682f2}\label{Switch_8h_ae3a2d4e5e2a907f03ab8a41e833682f2}} 
+\index{Switch.h@{Switch.h}!SWITCH\_update@{SWITCH\_update}}
+\index{SWITCH\_update@{SWITCH\_update}!Switch.h@{Switch.h}}
+\doxysubsubsection{\texorpdfstring{SWITCH\_update()}{SWITCH\_update()}}
+{\footnotesize\ttfamily void SWITCH\+\_\+update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+the periodic function of the switch it used to update the switch states 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{Switch_8h_ae3a2d4e5e2a907f03ab8a41e833682f2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Switch_8h_a6a40c164e7798f44e2e7e1fbac1e69a3}\label{Switch_8h_a6a40c164e7798f44e2e7e1fbac1e69a3}} 
+\index{Switch.h@{Switch.h}!SWITCH\_GetPressedSwitch@{SWITCH\_GetPressedSwitch}}
+\index{SWITCH\_GetPressedSwitch@{SWITCH\_GetPressedSwitch}!Switch.h@{Switch.h}}
+\doxysubsubsection{\texorpdfstring{SWITCH\_GetPressedSwitch}{SWITCH\_GetPressedSwitch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208f}{SWITCH\+\_\+\+NAME\+\_\+t}}($\ast$ SWITCH\+\_\+\+Get\+Pressed\+Switch) (void) (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Switch_8h_a19fe88ca4cbb06088cf2f099d761c9d1}\label{Switch_8h_a19fe88ca4cbb06088cf2f099d761c9d1}} 
+\index{Switch.h@{Switch.h}!SWITCH\_getTimePressed@{SWITCH\_getTimePressed}}
+\index{SWITCH\_getTimePressed@{SWITCH\_getTimePressed}!Switch.h@{Switch.h}}
+\doxysubsubsection{\texorpdfstring{SWITCH\_getTimePressed}{SWITCH\_getTimePressed}}
+{\footnotesize\ttfamily unsigned char($\ast$ SWITCH\+\_\+get\+Time\+Pressed) (void) (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+

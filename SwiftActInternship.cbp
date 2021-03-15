@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SwiftActInternship" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SwiftActInternship" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SwiftActInternship" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="source/MotorDriver/Motor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="source/MotorDriver/Motor.h" />
+		<Unit filename="source/SpeedControlModule/SpeedControlModule.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="source/SpeedControlModule/SpeedControlModule.h" />
+		<Unit filename="source/SwitchDriver/Switch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="source/SwitchDriver/Switch.h" />
+		<Unit filename="source/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="test/Fake_MotorDriver/FakeMotor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="test/Fake_MotorDriver/FakeMotor.h" />
+		<Unit filename="test/Fake_MotorDriver/FakeMotorTest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="test/Fake_SwitchDriver/FakeSwitch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="test/Fake_SwitchDriver/FakeSwitch.h" />
+		<Unit filename="test/Fake_SwitchDriver/FakeSwitchTest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="test/SpeedControlModuleTest/SpeedControlTest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="test/unity/unity.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="test/unity/unity.h" />
+		<Unit filename="test/unity/unity_fixture.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="test/unity/unity_fixture.h" />
+		<Unit filename="test/unity/unity_fixture_internals.h" />
+		<Unit filename="test/unity/unity_internals.h" />
+		<Unit filename="test/unity/unity_memory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="test/unity/unity_memory.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,5 @@
+<map id="SpeedControl_GetAngle" name="SpeedControl_GetAngle">
+<area shape="rect" id="node1" title="The current Angle Getter of the SpeedControl module." alt="" coords="156,31,332,57"/>
+<area shape="rect" id="node2" href="$SpeedControlTest_8c.html#a63e9dceb4e36552006a7103bd10b7af9" title=" " alt="" coords="29,5,84,32"/>
+<area shape="rect" id="node3" href="$FakeMotorTest_8c.html#a32e2c6c3f8f2e8b25c28b1f432a3481d" title=" " alt="" coords="5,56,108,83"/>
+</map>

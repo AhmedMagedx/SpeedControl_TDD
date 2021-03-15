@@ -1,0 +1,129 @@
+\hypertarget{SpeedControlModule_8c}{}\doxysection{source/\+Speed\+Control\+Module/\+Speed\+Control\+Module.c File Reference}
+\label{SpeedControlModule_8c}\index{source/SpeedControlModule/SpeedControlModule.c@{source/SpeedControlModule/SpeedControlModule.c}}
+
+
+File containing the implementaion of Speed Control module.  
+
+
+{\ttfamily \#include \char`\"{}Speed\+Control\+Module.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Private\+Speed\+Control.\+h\char`\"{}}\newline
+Include dependency graph for Speed\+Control\+Module.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SpeedControlModule_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{SpeedControlModule_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}~0
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{SpeedControlModule_8c_a34b7e86d8ab37a9176c2dce6783e37fd}{Speed\+Control\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em the module initialization to the defaults. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{SpeedControlModule_8c_aeab2387a15bb3ed43a4795e1fb67c59c}{Speed\+Control\+\_\+update}} (void)
+\begin{DoxyCompactList}\small\item\em The main function of the module , this function is supposed to called periodically to update the speed states according to the switches state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3}{Speed\+State\+\_\+t}} \mbox{\hyperlink{SpeedControlModule_8c_a3c00cc92ce5f3650f6eb99ef2052d3f0}{Speed\+Control\+\_\+\+Get\+Speed\+State}} (void)
+\begin{DoxyCompactList}\small\item\em The current Speed State Getter of the Speed\+Control module. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{SpeedControlModule_8c_a3958baa6cabf4c33fc8433c67a051d85}{Speed\+Control\+\_\+\+Get\+Angle}} (void)
+\begin{DoxyCompactList}\small\item\em The current Angle Getter of the Speed\+Control module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing the implementaion of Speed Control module. 
+
+\begin{DoxyAuthor}{Author}
+Ahmed Maged 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/03/2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{SpeedControlModule_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}\label{SpeedControlModule_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}} 
+\index{SpeedControlModule.c@{SpeedControlModule.c}!NULL@{NULL}}
+\index{NULL@{NULL}!SpeedControlModule.c@{SpeedControlModule.c}}
+\doxysubsubsection{\texorpdfstring{NULL}{NULL}}
+{\footnotesize\ttfamily \#define NULL~0}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{SpeedControlModule_8c_a3958baa6cabf4c33fc8433c67a051d85}\label{SpeedControlModule_8c_a3958baa6cabf4c33fc8433c67a051d85}} 
+\index{SpeedControlModule.c@{SpeedControlModule.c}!SpeedControl\_GetAngle@{SpeedControl\_GetAngle}}
+\index{SpeedControl\_GetAngle@{SpeedControl\_GetAngle}!SpeedControlModule.c@{SpeedControlModule.c}}
+\doxysubsubsection{\texorpdfstring{SpeedControl\_GetAngle()}{SpeedControl\_GetAngle()}}
+{\footnotesize\ttfamily unsigned char Speed\+Control\+\_\+\+Get\+Angle (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The current Angle Getter of the Speed\+Control module. 
+
+\begin{DoxyReturn}{Returns}
+unsigned char the current shared angle which is being set at THIS module and used at the motor driver module 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{SpeedControlModule_8c_a3958baa6cabf4c33fc8433c67a051d85_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlModule_8c_a3c00cc92ce5f3650f6eb99ef2052d3f0}\label{SpeedControlModule_8c_a3c00cc92ce5f3650f6eb99ef2052d3f0}} 
+\index{SpeedControlModule.c@{SpeedControlModule.c}!SpeedControl\_GetSpeedState@{SpeedControl\_GetSpeedState}}
+\index{SpeedControl\_GetSpeedState@{SpeedControl\_GetSpeedState}!SpeedControlModule.c@{SpeedControlModule.c}}
+\doxysubsubsection{\texorpdfstring{SpeedControl\_GetSpeedState()}{SpeedControl\_GetSpeedState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3}{Speed\+State\+\_\+t}} Speed\+Control\+\_\+\+Get\+Speed\+State (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The current Speed State Getter of the Speed\+Control module. 
+
+\begin{DoxyReturn}{Returns}
+Speed\+State\+\_\+t could be one of the following enumulation ( MINIMUM, MEDIUM, or MAXIMUM) 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{SpeedControlModule_8c_a3c00cc92ce5f3650f6eb99ef2052d3f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlModule_8c_a34b7e86d8ab37a9176c2dce6783e37fd}\label{SpeedControlModule_8c_a34b7e86d8ab37a9176c2dce6783e37fd}} 
+\index{SpeedControlModule.c@{SpeedControlModule.c}!SpeedControl\_init@{SpeedControl\_init}}
+\index{SpeedControl\_init@{SpeedControl\_init}!SpeedControlModule.c@{SpeedControlModule.c}}
+\doxysubsubsection{\texorpdfstring{SpeedControl\_init()}{SpeedControl\_init()}}
+{\footnotesize\ttfamily void Speed\+Control\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+the module initialization to the defaults. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{SpeedControlModule_8c_a34b7e86d8ab37a9176c2dce6783e37fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlModule_8c_aeab2387a15bb3ed43a4795e1fb67c59c}\label{SpeedControlModule_8c_aeab2387a15bb3ed43a4795e1fb67c59c}} 
+\index{SpeedControlModule.c@{SpeedControlModule.c}!SpeedControl\_update@{SpeedControl\_update}}
+\index{SpeedControl\_update@{SpeedControl\_update}!SpeedControlModule.c@{SpeedControlModule.c}}
+\doxysubsubsection{\texorpdfstring{SpeedControl\_update()}{SpeedControl\_update()}}
+{\footnotesize\ttfamily void Speed\+Control\+\_\+update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The main function of the module , this function is supposed to called periodically to update the speed states according to the switches state. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{SpeedControlModule_8c_aeab2387a15bb3ed43a4795e1fb67c59c_icgraph}
+\end{center}
+\end{figure}

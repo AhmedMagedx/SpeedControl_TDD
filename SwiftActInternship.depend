@@ -1,0 +1,209 @@
+# depslib dependency file v1.0
+1614106978 source:e:\swift act internship\v0.1\swiftactinternship\source\motordriver\motor.c
+
+1614441972 source:e:\swift act internship\v0.1\swiftactinternship\source\speedcontrolmodule\speedcontrolmodule.c
+	"SpeedControlModule.h"
+
+1614358405 source:e:\swift act internship\v0.1\swiftactinternship\source\main.c
+	<stdio.h>
+	<stdlib.h>
+	"SwitchDriver/Switch.h"
+	"MotorDriver/Motor.h"
+	"../test/unity/unity_fixture.h"
+
+1614187813 e:\swift act internship\v0.1\swiftactinternship\source\switchdriver\switch.h
+
+1614108883 e:\swift act internship\v0.1\swiftactinternship\source\motordriver\motor.h
+
+1578842215 e:\swift act internship\v0.1\swiftactinternship\test\unity\unity_fixture.h
+	"unity.h"
+	"unity_internals.h"
+	"unity_fixture_internals.h"
+	"unity_memory.h"
+
+1577326492 e:\swift act internship\v0.1\swiftactinternship\test\unity\unity.h
+	"unity_internals.h"
+
+1577326492 e:\swift act internship\v0.1\swiftactinternship\test\unity\unity_internals.h
+	"unity_config.h"
+	<setjmp.h>
+	<math.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdint.h>
+	<limits.h>
+	<stdio.h>
+	<stdio.h>
+	<time.h>
+	<time.h>
+
+1577326492 e:\swift act internship\v0.1\swiftactinternship\test\unity\unity_fixture_internals.h
+
+1577326492 e:\swift act internship\v0.1\swiftactinternship\test\unity\unity_memory.h
+	<stddef.h>
+	<stdlib.h>
+
+1614177286 source:e:\swift act internship\v0.1\swiftactinternship\source\switchdriver\switch.c
+	"switch.h"
+
+1614358771 source:e:\swift act internship\v0.1\swiftactinternship\test\fake_motordriver\fakemotor.c
+	"FakeMotor.h"
+
+1614341649 source:e:\swift act internship\v0.1\swiftactinternship\test\fake_switchdriver\fakeswitch.c
+	"FakeSwitch.h"
+	<stdio.h>
+
+1614175051 e:\swift act internship\v0.1\swiftactinternship\test\fake_switchdriver\fakeswitch.h
+	"../../source/SwitchDriver/Switch.h"
+
+1577326492 source:e:\swift act internship\v0.1\swiftactinternship\test\unity\unity.c
+	"unity.h"
+	<stddef.h>
+	<avr/pgmspace.h>
+
+1577326492 source:e:\swift act internship\v0.1\swiftactinternship\test\unity\unity_fixture.c
+	"unity_fixture.h"
+	"unity_internals.h"
+	<string.h>
+
+1577326492 source:e:\swift act internship\v0.1\swiftactinternship\test\unity\unity_memory.c
+	"unity.h"
+	"unity_memory.h"
+	<string.h>
+	<stdlib.h>
+
+1614443702 source:e:\swift act internship\v0.1\swiftactinternship\test\fake_motordriver\fakemotortest.c
+	"../Fake_SwitchDriver/FakeSwitch.h"
+	"../../source/SpeedControlModule/SpeedControlModule.h"
+	"FakeMotor.h"
+	"../unity/unity_fixture.h"
+	<stdio.h>
+	<string.h>
+	"../Fake_SwitchDriver/FakeSwitch.h"
+
+1614111412 source:e:\swift act internship\v0.1\swiftactinternship\test\motorspeedtest\motorspeedtest.c
+
+1614427784 source:e:\swift act internship\v0.1\swiftactinternship\test\fake_switchdriver\fakeswitchtest.c
+	"../Fake_SwitchDriver/FakeSwitch.h"
+	"../unity/unity_fixture.h"
+	<string.h>
+
+1614342453 e:\swift act internship\v0.1\swiftactinternship\source\speedcontrolmodule\speedcontrolmodule.h
+	"../SwitchDriver/Switch.h"
+
+1614440769 source:e:\swift act internship\v0.1\swiftactinternship\test\speedcontrolmoduletest\speedcontroltest.c
+	"../../source/SpeedControlModule/SpeedControlModule.h"
+	"../unity/unity_fixture.h"
+	"../Fake_SwitchDriver/FakeSwitch.h"
+
+1614356822 e:\swift act internship\v0.1\swiftactinternship\test\fake_motordriver\fakemotor.h
+
+1615575778 source:e:\swift act internship\v1.0\swiftactinternship\source\main.c
+	<stdio.h>
+	<stdlib.h>
+	"SwitchDriver/Switch.h"
+	"MotorDriver/Motor.h"
+	"SpeedControlModule/SpeedControlModule.h"
+	"../test/unity/unity_fixture.h"
+
+1614694299 e:\swift act internship\v1.0\swiftactinternship\source\switchdriver\switch.h
+
+1614972957 e:\swift act internship\v1.0\swiftactinternship\source\motordriver\motor.h
+
+1578842215 e:\swift act internship\v1.0\swiftactinternship\test\unity\unity_fixture.h
+	"unity.h"
+	"unity_internals.h"
+	"unity_fixture_internals.h"
+	"unity_memory.h"
+
+1577326492 e:\swift act internship\v1.0\swiftactinternship\test\unity\unity.h
+	"unity_internals.h"
+
+1577326492 e:\swift act internship\v1.0\swiftactinternship\test\unity\unity_internals.h
+	"unity_config.h"
+	<setjmp.h>
+	<math.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdint.h>
+	<limits.h>
+	<stdio.h>
+	<stdio.h>
+	<time.h>
+	<time.h>
+
+1577326492 e:\swift act internship\v1.0\swiftactinternship\test\unity\unity_fixture_internals.h
+
+1577326492 e:\swift act internship\v1.0\swiftactinternship\test\unity\unity_memory.h
+	<stddef.h>
+	<stdlib.h>
+
+1615560647 source:e:\swift act internship\v1.0\swiftactinternship\source\motordriver\motor.c
+	"Motor.h"
+
+1615560167 source:e:\swift act internship\v1.0\swiftactinternship\source\speedcontrolmodule\speedcontrolmodule.c
+	"SpeedControlModule.h"
+	"PrivateSpeedControl.h"
+
+1615539739 e:\swift act internship\v1.0\swiftactinternship\source\speedcontrolmodule\speedcontrolmodule.h
+	"../SwitchDriver/Switch.h"
+	"../MotorDriver/Motor.h"
+
+1615537355 source:e:\swift act internship\v1.0\swiftactinternship\source\switchdriver\switch.c
+	"switch.h"
+
+1615560656 source:e:\swift act internship\v1.0\swiftactinternship\test\fake_motordriver\fakemotor.c
+	"FakeMotor.h"
+	<string.h>
+	"../unity/unity_fixture.h"
+
+1615024763 e:\swift act internship\v1.0\swiftactinternship\test\fake_motordriver\fakemotor.h
+
+1615211364 source:e:\swift act internship\v1.0\swiftactinternship\test\fake_switchdriver\fakeswitch.c
+	"FakeSwitch.h"
+	<stdio.h>
+
+1615194393 e:\swift act internship\v1.0\swiftactinternship\test\fake_switchdriver\fakeswitch.h
+	"../../source/SwitchDriver/Switch.h"
+
+1615057325 source:e:\swift act internship\v1.0\swiftactinternship\test\fake_motordriver\fakemotortest.c
+	"../Fake_SwitchDriver/FakeSwitch.h"
+	"../../source/SpeedControlModule/SpeedControlModule.h"
+	"FakeMotor.h"
+	"../unity/unity_fixture.h"
+	<stdio.h>
+	<string.h>
+	"../Fake_SwitchDriver/FakeSwitch.h"
+
+1615057203 source:e:\swift act internship\v1.0\swiftactinternship\test\fake_switchdriver\fakeswitchtest.c
+	"../Fake_SwitchDriver/FakeSwitch.h"
+	"../unity/unity_fixture.h"
+	<string.h>
+
+1615565587 source:e:\swift act internship\v1.0\swiftactinternship\test\speedcontrolmoduletest\speedcontroltest.c
+	"../../source/SpeedControlModule/SpeedControlModule.h"
+	"../Fake_MotorDriver/FakeMotor.h"
+	"../Fake_SwitchDriver/FakeSwitch.h"
+	"../../source/MotorDriver/Motor.h"
+	"../../source/SwitchDriver/Switch.h"
+	"../unity/unity_fixture.h"
+	<string.h>
+
+1577326492 source:e:\swift act internship\v1.0\swiftactinternship\test\unity\unity.c
+	"unity.h"
+	<stddef.h>
+	<avr/pgmspace.h>
+
+1577326492 source:e:\swift act internship\v1.0\swiftactinternship\test\unity\unity_fixture.c
+	"unity_fixture.h"
+	"unity_internals.h"
+	<string.h>
+
+1577326492 source:e:\swift act internship\v1.0\swiftactinternship\test\unity\unity_memory.c
+	"unity.h"
+	"unity_memory.h"
+	<string.h>
+	<stdlib.h>
+
+1615539797 e:\swift act internship\v1.0\swiftactinternship\source\speedcontrolmodule\privatespeedcontrol.h
+

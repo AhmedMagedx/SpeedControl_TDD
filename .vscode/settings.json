@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "fakemotor.h": "c",
+        "fakeswitch.h": "c",
+        "switch.h": "c",
+        "unity_fixture.h": "c",
+        "speedcontrolmodule.h": "c",
+        "privatespeedcontrol.h": "c",
+        "motor.h": "c"
+    }
+}

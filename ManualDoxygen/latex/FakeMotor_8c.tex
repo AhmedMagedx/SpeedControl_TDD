@@ -1,0 +1,138 @@
+\hypertarget{FakeMotor_8c}{}\doxysection{test/\+Fake\+\_\+\+Motor\+Driver/\+Fake\+Motor.c File Reference}
+\label{FakeMotor_8c}\index{test/Fake\_MotorDriver/FakeMotor.c@{test/Fake\_MotorDriver/FakeMotor.c}}
+{\ttfamily \#include \char`\"{}Fake\+Motor.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../unity/unity\+\_\+fixture.\+h\char`\"{}}\newline
+Include dependency graph for Fake\+Motor.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotor_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{FakeMotor_8c_a0b8af82a04a36e8bc6b78f97040433e5}{RATIO\+\_\+\+MAXSPEED}}~(100/100)
+\item 
+\#define \mbox{\hyperlink{FakeMotor_8c_af722702ad538a6f2d79f67782249b58a}{RATIO\+\_\+\+MEDSPEED}}~(100/100)
+\item 
+\#define \mbox{\hyperlink{FakeMotor_8c_a4d8af4a1744276c7922bbcef0da0c475}{RATIO\+\_\+\+MINSPEED}}~(100/100)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{FakeMotor_8c_af38aab0daca2d3ec94761c2ef44a67a6}{Write\+To\+File}} (const unsigned char angle)
+\item 
+void \mbox{\hyperlink{FakeMotor_8c_a69ea4c0a756ae570505224c41dc48f99}{FAKE\+\_\+\+MOTOR\+\_\+destroy}} (void)
+\item 
+void \mbox{\hyperlink{FakeMotor_8c_abaabd4924c203978490c8d1d4f594a57}{FAKE\+\_\+\+MOTOR\+\_\+init}} (void)
+\item 
+void \mbox{\hyperlink{FakeMotor_8c_a7178f8a36d318bca8ef05c00f8862f9f}{FAKE\+\_\+\+MOTOR\+\_\+update}} (void)
+\item 
+void \mbox{\hyperlink{FakeMotor_8c_ad36066e915cd83cce68456672d018fa5}{Fake\+MOTOR\+\_\+write\+To\+Hardware}} (const unsigned angle)
+\item 
+unsigned char \mbox{\hyperlink{FakeMotor_8c_a643dce7a4937e6e78f65adb25fe50e99}{FAKE\+\_\+\+MOTOR\+\_\+\+Get\+Angle}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{FakeMotor_8c_a0b8af82a04a36e8bc6b78f97040433e5}\label{FakeMotor_8c_a0b8af82a04a36e8bc6b78f97040433e5}} 
+\index{FakeMotor.c@{FakeMotor.c}!RATIO\_MAXSPEED@{RATIO\_MAXSPEED}}
+\index{RATIO\_MAXSPEED@{RATIO\_MAXSPEED}!FakeMotor.c@{FakeMotor.c}}
+\doxysubsubsection{\texorpdfstring{RATIO\_MAXSPEED}{RATIO\_MAXSPEED}}
+{\footnotesize\ttfamily \#define RATIO\+\_\+\+MAXSPEED~(100/100)}
+
+\mbox{\Hypertarget{FakeMotor_8c_af722702ad538a6f2d79f67782249b58a}\label{FakeMotor_8c_af722702ad538a6f2d79f67782249b58a}} 
+\index{FakeMotor.c@{FakeMotor.c}!RATIO\_MEDSPEED@{RATIO\_MEDSPEED}}
+\index{RATIO\_MEDSPEED@{RATIO\_MEDSPEED}!FakeMotor.c@{FakeMotor.c}}
+\doxysubsubsection{\texorpdfstring{RATIO\_MEDSPEED}{RATIO\_MEDSPEED}}
+{\footnotesize\ttfamily \#define RATIO\+\_\+\+MEDSPEED~(100/100)}
+
+\mbox{\Hypertarget{FakeMotor_8c_a4d8af4a1744276c7922bbcef0da0c475}\label{FakeMotor_8c_a4d8af4a1744276c7922bbcef0da0c475}} 
+\index{FakeMotor.c@{FakeMotor.c}!RATIO\_MINSPEED@{RATIO\_MINSPEED}}
+\index{RATIO\_MINSPEED@{RATIO\_MINSPEED}!FakeMotor.c@{FakeMotor.c}}
+\doxysubsubsection{\texorpdfstring{RATIO\_MINSPEED}{RATIO\_MINSPEED}}
+{\footnotesize\ttfamily \#define RATIO\+\_\+\+MINSPEED~(100/100)}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{FakeMotor_8c_a69ea4c0a756ae570505224c41dc48f99}\label{FakeMotor_8c_a69ea4c0a756ae570505224c41dc48f99}} 
+\index{FakeMotor.c@{FakeMotor.c}!FAKE\_MOTOR\_destroy@{FAKE\_MOTOR\_destroy}}
+\index{FAKE\_MOTOR\_destroy@{FAKE\_MOTOR\_destroy}!FakeMotor.c@{FakeMotor.c}}
+\doxysubsubsection{\texorpdfstring{FAKE\_MOTOR\_destroy()}{FAKE\_MOTOR\_destroy()}}
+{\footnotesize\ttfamily void FAKE\+\_\+\+MOTOR\+\_\+destroy (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotor_8c_a69ea4c0a756ae570505224c41dc48f99_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotor_8c_a643dce7a4937e6e78f65adb25fe50e99}\label{FakeMotor_8c_a643dce7a4937e6e78f65adb25fe50e99}} 
+\index{FakeMotor.c@{FakeMotor.c}!FAKE\_MOTOR\_GetAngle@{FAKE\_MOTOR\_GetAngle}}
+\index{FAKE\_MOTOR\_GetAngle@{FAKE\_MOTOR\_GetAngle}!FakeMotor.c@{FakeMotor.c}}
+\doxysubsubsection{\texorpdfstring{FAKE\_MOTOR\_GetAngle()}{FAKE\_MOTOR\_GetAngle()}}
+{\footnotesize\ttfamily unsigned char FAKE\+\_\+\+MOTOR\+\_\+\+Get\+Angle (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{FakeMotor_8c_a643dce7a4937e6e78f65adb25fe50e99_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotor_8c_abaabd4924c203978490c8d1d4f594a57}\label{FakeMotor_8c_abaabd4924c203978490c8d1d4f594a57}} 
+\index{FakeMotor.c@{FakeMotor.c}!FAKE\_MOTOR\_init@{FAKE\_MOTOR\_init}}
+\index{FAKE\_MOTOR\_init@{FAKE\_MOTOR\_init}!FakeMotor.c@{FakeMotor.c}}
+\doxysubsubsection{\texorpdfstring{FAKE\_MOTOR\_init()}{FAKE\_MOTOR\_init()}}
+{\footnotesize\ttfamily void FAKE\+\_\+\+MOTOR\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{FakeMotor_8c_abaabd4924c203978490c8d1d4f594a57_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotor_8c_a7178f8a36d318bca8ef05c00f8862f9f}\label{FakeMotor_8c_a7178f8a36d318bca8ef05c00f8862f9f}} 
+\index{FakeMotor.c@{FakeMotor.c}!FAKE\_MOTOR\_update@{FAKE\_MOTOR\_update}}
+\index{FAKE\_MOTOR\_update@{FAKE\_MOTOR\_update}!FakeMotor.c@{FakeMotor.c}}
+\doxysubsubsection{\texorpdfstring{FAKE\_MOTOR\_update()}{FAKE\_MOTOR\_update()}}
+{\footnotesize\ttfamily void FAKE\+\_\+\+MOTOR\+\_\+update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{FakeMotor_8c_a7178f8a36d318bca8ef05c00f8862f9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotor_8c_ad36066e915cd83cce68456672d018fa5}\label{FakeMotor_8c_ad36066e915cd83cce68456672d018fa5}} 
+\index{FakeMotor.c@{FakeMotor.c}!FakeMOTOR\_writeToHardware@{FakeMOTOR\_writeToHardware}}
+\index{FakeMOTOR\_writeToHardware@{FakeMOTOR\_writeToHardware}!FakeMotor.c@{FakeMotor.c}}
+\doxysubsubsection{\texorpdfstring{FakeMOTOR\_writeToHardware()}{FakeMOTOR\_writeToHardware()}}
+{\footnotesize\ttfamily void Fake\+MOTOR\+\_\+write\+To\+Hardware (\begin{DoxyParamCaption}\item[{const unsigned}]{angle }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotor_8c_ad36066e915cd83cce68456672d018fa5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotor_8c_af38aab0daca2d3ec94761c2ef44a67a6}\label{FakeMotor_8c_af38aab0daca2d3ec94761c2ef44a67a6}} 
+\index{FakeMotor.c@{FakeMotor.c}!WriteToFile@{WriteToFile}}
+\index{WriteToFile@{WriteToFile}!FakeMotor.c@{FakeMotor.c}}
+\doxysubsubsection{\texorpdfstring{WriteToFile()}{WriteToFile()}}
+{\footnotesize\ttfamily void Write\+To\+File (\begin{DoxyParamCaption}\item[{const unsigned char}]{angle }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotor_8c_af38aab0daca2d3ec94761c2ef44a67a6_icgraph}
+\end{center}
+\end{figure}
