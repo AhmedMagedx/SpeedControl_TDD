@@ -9,18 +9,14 @@
 
 #include "SpeedControlModule.h"
 #include "PrivateSpeedControl.h"
+#include "../common/std_types.h"
 
-#if 0
-/*these variables are read from the switch driver */
-extern SWITCH_STATE_t PV_State;
-extern SWITCH_STATE_t MV_State;
-extern SWITCH_STATE_t P_State;
-extern unsigned char TimePressed;
+extern void (* MOTOR_SetSharedAngleGetter)(unsigned char (* pGetSharedAngle)(void));
+
+
+#ifndef NULL
+    #define NULL 0
 #endif
-
-
-
-#define NULL 0
 
 /* Privates */
 static SpeedState_t SpeedState = MINIMUM;   /* minimum is a PRE_INITIALIZATION value*/
@@ -29,21 +25,42 @@ static unsigned char SharedAngle = 0;       /* Zero is the PRE_INITIALIZATION va
 
 
 /**
- * @brief the module initialization to the defaults.
+ * @brief the module initialization, Set the globals to the defaults.
  * 
  */
-void SpeedControl_init(void)
+ERROR_t SpeedControl_init(void)
 {
-    SpeedState = MEDIUM;        /* default speed state */
-    SharedAngle = 90;           /* default angle (50% duty cycle)*/
+    static long TimeOut = 10000;
+    SpeedState  = MEDIUM;        /* default speed state */
+    SharedAngle = 90;            /* default angle (50% duty cycle)*/
     if( NULL != MOTOR_SetSharedAngleGetter)
     {
-         MOTOR_SetSharedAngleGetter(SpeedControl_GetAngle); /* Set the callback pointer (whether i`m setting in fake or real !!)*/
+        //printf("\nNot NULL %d\n",TimeOut);
+        MOTOR_SetSharedAngleGetter(SpeedControl_GetAngle); /* Set the callback pointer (whether i`m setting in fake or real !!)*/
+        return E_OK;
+    }
+    else    /* if the pointer to function is not set yet */
+    {
+        //printf("\nNULL %d\n",TimeOut);
+        if(TimeOut == 0)
+        {
+            //printf("\nTimeOut %d\n",TimeOut);
+            return E_NOK;  /* notify error */
+        }
+        else
+        {
+            //printf("\nWait %d\n",TimeOut);
+            TimeOut--;  /* wait a little */
+            return PENDING;  /* notify pending operation */
+        }
     }
 }
 
+
+
+
 /**
- * @brief The main function of the module , this function is supposed to called
+ * @brief The main function of the module, this function is supposed to called
  *        periodically to update the speed states according to the switches state
  */
 void SpeedControl_update(void)

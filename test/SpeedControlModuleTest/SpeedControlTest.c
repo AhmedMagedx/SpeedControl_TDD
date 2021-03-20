@@ -222,6 +222,7 @@ TEST_TEAR_DOWN(SpeedControlUpdate)
     /* return to the defualt state as the test is never done after tect completion*/
     //printf("\nTEST_TEAR_DOWN\n");
     gCLEAR_FILE = 1;
+    FAKE_MOTOR_Deinit();
 
 }
 
@@ -298,7 +299,7 @@ TEST(SpeedControlUpdate, N1StateTC2)
 
         /*!
 		  * @par Given : state is MEDIUM
-		  * @par When  : 
+		  * @par When  :
 		  * @par Then  : values should be MEDIUM, 90
 	    */
         /* current State is MED after init */
@@ -308,7 +309,7 @@ TEST(SpeedControlUpdate, N1StateTC2)
 
         /*!
 		  * @par Given : state is MEDIUM
-		  * @par When  : MinusV pressed 
+		  * @par When  : MinusV pressed
 		  * @par Then  : values should be MINIMUM, 140
 	    */
     FakeSWarrange( SW_RELEASED, SW_PRESSED, SW_RELEASED, 0);   /* MinusV pressed */
@@ -319,7 +320,7 @@ TEST(SpeedControlUpdate, N1StateTC2)
 
         /*!
 		  * @par Given : state is MINIMUM
-		  * @par When  : PlusV pressed 
+		  * @par When  : PlusV pressed
 		  * @par Then  : values should be MEDIUM, 90
 	    */
     FakeSWarrange( SW_PRESSED, SW_RELEASED, SW_RELEASED, 0);   /* PlusV pressed */
@@ -329,7 +330,7 @@ TEST(SpeedControlUpdate, N1StateTC2)
 
         /*!
 		  * @par Given : state is MEDIUM
-		  * @par When  : PlusV pressed 
+		  * @par When  : PlusV pressed
 		  * @par Then  : values should be MAXIMUM, 10
 	    */
     FakeSWarrange( SW_PRESSED, SW_RELEASED, SW_RELEASED, 0);   /* PlusV pressed */
@@ -344,7 +345,7 @@ TEST(SpeedControlUpdate, N1StateTC3)
 
         /*!
 		  * @par Given : state is MEDIUM
-		  * @par When  : 
+		  * @par When  :
 		  * @par Then  : values should be MEDIUM, 90
 	    */
     /* current State is MED after init */
@@ -354,7 +355,7 @@ TEST(SpeedControlUpdate, N1StateTC3)
 
         /*!
 		  * @par Given : state is MEDIUM
-		  * @par When  : PlusV pressed 
+		  * @par When  : PlusV pressed
 		  * @par Then  : values should be MAXIMUM, 10
 	    */
     FakeSWarrange( SW_PRESSED, SW_RELEASED, SW_RELEASED, 0);   /* PlusV pressed */
@@ -365,7 +366,7 @@ TEST(SpeedControlUpdate, N1StateTC3)
 
         /*!
 		  * @par Given : state is MAXIMUM
-		  * @par When  : PlusV pressed 
+		  * @par When  : PlusV pressed
 		  * @par Then  : values should be MEDIUM, 90
 	    */
     FakeSWarrange( SW_RELEASED, SW_PRESSED, SW_RELEASED, 0);   /* MinusV pressed */
@@ -376,7 +377,7 @@ TEST(SpeedControlUpdate, N1StateTC3)
 
         /*!
 		  * @par Given : state is MEDIUM
-		  * @par When  : PlusV pressed 
+		  * @par When  : PlusV pressed
 		  * @par Then  : values should be MINIMUM, 140
 	    */
     FakeSWarrange( SW_RELEASED, SW_PRESSED, SW_RELEASED, 0);   /* MinusV pressed */
@@ -390,10 +391,10 @@ TEST(SpeedControlUpdate, N1StateTC3)
 TEST(SpeedControlUpdate, N1StateTC4)
 {
     /* 4 - MED > MAX > MED > MAX. */
-    
+
         /*!
 		  * @par Given : state is MEDIUM
-		  * @par When  : 
+		  * @par When  :
 		  * @par Then  : values should be MEDIUM, 90
 	    */
     /* current State is MED after init */
@@ -402,7 +403,7 @@ TEST(SpeedControlUpdate, N1StateTC4)
 
         /*!
 		  * @par Given : state is MEDIUM
-		  * @par When  : PlusV pressed 
+		  * @par When  : PlusV pressed
 		  * @par Then  : values should be MAXIMUM, 10
 	    */
     FakeSWarrange( SW_PRESSED, SW_RELEASED, SW_RELEASED, 0);   /* PlusV pressed */
@@ -412,7 +413,7 @@ TEST(SpeedControlUpdate, N1StateTC4)
 
         /*!
 		  * @par Given : state is MAXIMUM
-		  * @par When  : PlusV pressed 
+		  * @par When  : PlusV pressed
 		  * @par Then  : values should be MEDIUM, 90
 	    */
     FakeSWarrange( SW_RELEASED, SW_RELEASED, SW_PRESSED, 50);   /* P pressed & time > 30 */
@@ -423,7 +424,7 @@ TEST(SpeedControlUpdate, N1StateTC4)
 
         /*!
 		  * @par Given : state is MEDIUM
-		  * @par When  : PlusV pressed 
+		  * @par When  : PlusV pressed
 		  * @par Then  : values should be MAXIMUM, 10
 	    */
     FakeSWarrange( SW_PRESSED, SW_RELEASED, SW_RELEASED, 0);   /* PlusV pressed */
@@ -512,9 +513,13 @@ TEST(SpeedControlUpdate, EP_TC2_VALID)
 		  * @par When  : p pressed & time = 143
 		  * @par Then  : values should MINIMUM, 140
 	    */
+    /* Arrange */
     FakeSWarrange( SW_RELEASED, SW_RELEASED, SW_PRESSED, 143);   /* p pressed & time = 143 */
+
+    /* Act */
     SpeedControl_update();
 
+    /* Assert */
     LONGS_EQUAL(MINIMUM, SpeedControl_GetSpeedState() );  /* Should change */
     LONGS_EQUAL(140, SpeedControl_GetAngle() );          /* Should change */
 
@@ -544,7 +549,7 @@ TEST(SpeedControlUpdate, BVA_TC2_VALID)
 
         /*!
 		  * @par Given : state is MAXIMUM
-		  * @par When  : p pressed & time = 30 
+		  * @par When  : p pressed & time = 30
 		  * @par Then  : values should MEDIUM, 90
 	    */
     SET_STATE_TO_MAX;  /* it should be added to arrange function */
@@ -556,7 +561,7 @@ TEST(SpeedControlUpdate, BVA_TC2_VALID)
 
         /*!
 		  * @par Given : state is MEDIUM
-		  * @par When  : p pressed & time = 30 
+		  * @par When  : p pressed & time = 30
 		  * @par Then  : values should MINIMUM, 140
 	    */
     FakeSWarrange( SW_RELEASED, SW_RELEASED, SW_PRESSED, 255);   /* p pressed & time = 255 */
@@ -630,7 +635,7 @@ TEST_SETUP(InputTestCases)
 
 TEST_TEAR_DOWN(InputTestCases)
 {
-    ;
+    FAKE_MOTOR_Deinit();
 }
 
 
@@ -701,7 +706,7 @@ TEST(InputTestCases, TC6)
 
 TEST(InputTestCases, TC7)
 {
-    TestLineCurrent++;  
+    TestLineCurrent++;
     FileRead_SpeedControl_FakeSwitch_Arrange();
     SpeedControl_update();
     FAKE_MOTOR_update();
@@ -770,6 +775,7 @@ static char *  Help_StrPressedButton(void)
         case P_switch:  return "P_switch";
         case NONE:  return "NONE";
     }
+    return -1; /* if error only */
 }
 
 static char *  Help_StrSwitchState(SWITCH_NAME_t loc_SN)
@@ -782,6 +788,7 @@ static char *  Help_StrSwitchState(SWITCH_NAME_t loc_SN)
         case SW_RELEASED:  return "SW_RELEASED";
         case SW_PRERELEASED:     return "SW_PRERELEASED";
     }
+    return -1; /* if error only */
 }
 
 
@@ -860,7 +867,7 @@ static void getTestData(    SpeedState_t* intialSpeedState , SWITCH_STATE_t* PV_
     {
         /* get test line*/
         char CharTestNum[2];                /* Max Test Lines is 99 */
-        fscanf(f,"%s\n", &CharTestNum);
+        fscanf(f,"%s\n", CharTestNum);
         TestLineNum = (char)atoi(CharTestNum);
 
         //printf("\nNumber of Test lines %d\n", TestLineNum);
@@ -877,9 +884,9 @@ static void getTestData(    SpeedState_t* intialSpeedState , SWITCH_STATE_t* PV_
             memset(loc_initSS,0,3);
            //  fscanf(f,"%20s%20s%20s%20s%3s\n",  &loc_initSS,  &str1,
             //                              &str2,          &str3, &loc_Time, &loc_ExpectedAngle);
-            fscanf(f,"%20s%20s%20s%20s%3s%3s\n",  &loc_initSS,  &str1,
-                                                  &str2,                  &str3,
-                                                  &loc_Time,       &loc_ExpectedAngle);
+            fscanf(f,"%20s%20s%20s%20s%3s%3s\n",  loc_initSS,  str1,
+                                                  str2,                  str3,
+                                                  loc_Time,       loc_ExpectedAngle);
         }
 
        // printf("\nSpeedState:%s  PV: %s, MV: %s, P: %s, pTime: %s, ExAngle: %s\n",loc_initSS, str1, str2, str3, loc_Time, loc_ExpectedAngle);
@@ -1002,7 +1009,7 @@ static unsigned char GetFromTheFile(unsigned char LineNum)
         for(char i=1; i<= LineNum; i++)
         {
             memset(CharAngle, 0, 3);
-            fscanf(fr,"%s\n", &CharAngle);
+            fscanf(fr,"%s\n", CharAngle);
         }
 
         fclose(fr);

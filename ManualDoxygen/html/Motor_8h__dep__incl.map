@@ -1,9 +1,0 @@
-<map id="source/MotorDriver/Motor.h" name="source/MotorDriver/Motor.h">
-<area shape="rect" id="node1" title=" " alt="" coords="371,5,518,47"/>
-<area shape="rect" id="node2" href="$Motor_8c.html" title=" " alt="" coords="102,95,249,136"/>
-<area shape="rect" id="node3" href="$SpeedControlModule_8h.html" title=" " alt="" coords="273,95,477,136"/>
-<area shape="rect" id="node6" href="$main_8c.html" title=" " alt="" coords="424,191,537,218"/>
-<area shape="rect" id="node7" href="$SpeedControlTest_8c.html" title=" " alt="" coords="561,184,773,225"/>
-<area shape="rect" id="node4" href="$SpeedControlModule_8c.html" title="File containing the implementaion of Speed Control module." alt="" coords="5,184,209,225"/>
-<area shape="rect" id="node5" href="$FakeMotorTest_8c.html" title=" " alt="" coords="234,184,399,225"/>
-</map>

@@ -1,5 +1,5 @@
 #include "../Fake_SwitchDriver/FakeSwitch.h"  /* Fake to get data */
-#include "../../source/SpeedControlModule/SpeedControlModule.h"     /* Real to test */
+//#include "../../source/SpeedControlModule/SpeedControlModule.h"     /* Real to test */
 #include "FakeMotor.h"      /* Fake to write data to the file */
 #include "../unity/unity_fixture.h"
 
@@ -25,6 +25,7 @@
 
 
 /*/************** debug only ************************/
+#if 0
 #include <stdio.h>
 #include <string.h>
 #include "../Fake_SwitchDriver/FakeSwitch.h"
@@ -36,7 +37,7 @@ extern SWITCH_STATE_t MV_State;
 extern SWITCH_STATE_t P_State;
 extern unsigned char TimePressed;
 void DEBUG_PRINT(void);
-
+#endif
 
 
 TEST_GROUP(FakeMotor);
@@ -46,7 +47,7 @@ TEST_SETUP(FakeMotor)
 {
     FAKE_MOTOR_init();    /* set callback in the fake module*/
     //printf("\n**************HERE****************\n");
-    MOTOR_SetSharedAngleGetter( SpeedControl_GetAngle );
+    //MOTOR_SetSharedAngleGetter( SpeedControl_GetAngle );
     //printf("\n**************HERE****************\n");
     SpeedControl_init();  /* State >> MED ,  Angle >> 90*/
 }
@@ -54,7 +55,7 @@ TEST_SETUP(FakeMotor)
 
 TEST_TEAR_DOWN(FakeMotor)
 {
-    FAKE_MOTOR_destroy();
+    FAKE_MOTOR_Deinit();
 }
 
 

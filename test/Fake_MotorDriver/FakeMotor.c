@@ -9,6 +9,9 @@
 #define RATIO_MEDSPEED (100/100)
 #define RATIO_MINSPEED (100/100)
 
+#ifndef NULL
+    #define NULL
+#endif // !NULL
 
 
 
@@ -21,10 +24,7 @@ static unsigned char SharedAngle = 0;
 static int effictiveAngle = 0;
 
 
-void FAKE_MOTOR_destroy(void)
-{
-    ;
-}
+
 
 /*prototype*/
 static void MOTOR_writeToHardware(const unsigned angle);
@@ -38,6 +38,11 @@ void FAKE_MOTOR_init(void)
     effictiveAngle = RATIO_MEDSPEED * SharedAngle;
     //SC_CallBack_GetSharedAnglePtr = pGetSharedAngle;
     MOTOR_SetSharedAngleGetter = Fake_MOTOR_SetSharedAngleGetter;
+}
+
+void FAKE_MOTOR_Deinit(void)
+{
+    MOTOR_SetSharedAngleGetter = NULL;   /* Pre_init value */
 }
 
 /**

@@ -171,6 +171,8 @@ TEST(FakeSwitch, PriorityCheckAllPressed)
 
 
 
+
+
 TEST_GROUP_RUNNER(FakeSwitch)
 {
     RUN_TEST_CASE(FakeSwitch, switchesAreReleasedAfterInit);

@@ -10,13 +10,12 @@
 
 //void MOTOR_init(unsigned char (* pGetSharedAngle)(void));
 void FAKE_MOTOR_init(void);
+void FAKE_MOTOR_Deinit(void);
 void FAKE_MOTOR_update(void);
 extern void (* MOTOR_SetSharedAngleGetter)(unsigned char (* pGetSharedAngle)(void));
 
 unsigned char FAKE_MOTOR_GetAngle(void);
 
-
-void FAKE_MOTOR_destroy(void);
 
 
 

@@ -1,12 +1,15 @@
 #include "Motor.h"
-
+#include "../common/STD_TYPES.h"
 
 /* maybe useful for calibration and mapping the SharedAngle
    from SCmodule to the real effictive angle                */
 #define RATIO_MAXSPEED (100/100)
 #define RATIO_MEDSPEED (100/100)
 #define RATIO_MINSPEED (100/100)
-#define NULL 0
+
+#ifndef NULL
+    #define NULL 0
+#endif /* NULL */
 
 static unsigned char SharedAngle = 0;
 static int effictiveAngle = 0;
@@ -15,21 +18,27 @@ static int effictiveAngle = 0;
 static void MOTOR_writeToHardware(const unsigned angle);
 static void MOTOR_SetSharedAngleGetter_real(unsigned char (* pGetSharedAngle)(void));
 static unsigned char (*SC_CallBack_GetSharedAnglePtr)(void);
-void (* MOTOR_SetSharedAngleGetter)(unsigned char (* pGetSharedAngle)(void));
+void (* MOTOR_SetSharedAngleGetter)(unsigned char (* pGetSharedAngle)(void)) = NULL;
 
-void MOTOR_init(void)
+
+ERROR_t MOTOR_init(void)
 {
     effictiveAngle = RATIO_MEDSPEED * SharedAngle;
     MOTOR_SetSharedAngleGetter = MOTOR_SetSharedAngleGetter_real;
+    return E_OK;
+}
+
+void MOTOR_Deinit(void)
+{
+    MOTOR_SetSharedAngleGetter = NULL;  /* pre_initialization value */
 }
 
 
-
 /**
- * @brief in case if the user pass the callback pointer points to NULL, 
+ * @brief in case if the user pass the callback pointer points to NULL,
  *          the local callback will points to here instead
- * 
- * @return unsigned char : Zero value 
+ *
+ * @return unsigned char : Zero value
  */
 static unsigned char ERROR_HANDLER_RETURN_ZERO(void)
 {

@@ -31,8 +31,8 @@ static unsigned char SWITCH_getTimePressed_Real(void);
  */
 void       SWITCH_init(void)
 {
-    SWITCH_GetPressedSwitch = SWITCH_getSwState_Real;       /* Set the pressed switch getter  to the real Getter*/
-    SWITCH_getTimePressed = SWITCH_getTimePressed_Real;     /* Set the pressure pressed time getter to the real Getter*/
+    SWITCH_GetPressedSwitch = SWITCH_getSwState_Real;         /* Set the pressed switch getter  to the real Getter*/
+    SWITCH_getTimePressed   = SWITCH_getTimePressed_Real;     /* Set the pressure pressed time getter to the real Getter*/
 
     PV_State = SW_RELEASED;         /* initial State */
     MV_State = SW_RELEASED;         /* initial State */
@@ -44,7 +44,7 @@ void       SWITCH_init(void)
  * @brief the periodic function of the switch 
  * it used to update the switch states
  */
-void        SWITCH_update(void)
+ERROR_t      SWITCH_update(void)
 {
     /* Do nothing for now */
     /* read the hardware  */
