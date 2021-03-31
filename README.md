@@ -6,21 +6,22 @@
 
 ## System Static Architecture
 
- 	![Static Architecture](/images/staticArch.jpg)
+![Static Architecture](./images/staticArch.jpg)
+
 
 ## System Block Diagram 
 
- 	![Block Diagram](images/blockDiagram.jpg)
+![Block Diagram](./images/blockDiagram.jpg)
 
 ## State Machine for Speed Control Module
 
- 	![statemachine](./images/statemachine.jpg)
+![statemachine](./images/statemachine.jpg)
 
 
 ## Sequence diagram for setting the callback.
 in the real and fake motor, so as to let the SpeedControl module set the callback in both the Real and Fake Motor module without knowing the existance of the the fake motor module:
 
- 	![sequance](./images/sequance.jpg)
+![sequance](./images/sequance.jpg)
 
 
 ## APIs for modules
@@ -49,7 +50,7 @@ All analysis assume that there is no blocking points in the system.
 
 ## Approach 1
 
- 	![Timing1](./images/timing1.jpg)
+![Timing1](./images/timing1.jpg)
 
 Average CPU load = (3)/15= 20%
 
@@ -59,12 +60,12 @@ Adv: Faster
 
 ### Schedulability Check
 
- 	![sched](./images/sched.jpg)
+![sched](./images/sched.jpg)
 
 
 ## Approach 2
 
- 	![Timing1](./images/timing2.jpg)
+![Timing1](./images/timing2.jpg)
 
 Average CPU load = (4)/20= 20%
 
@@ -75,4 +76,9 @@ Adv: longer life time (! maybe)
 
 ### Schedulability Check
 
- 	![sched](./images/sched2.jpg)
+![sched](./images/sched2.jpg)
+
+
+IMPORTANT NOTE:
+I`M TOTALLY NOT SURE ABOUT ANYTHING WRITTEN ABOVE,
+THEY MAYBE RIGHT OR WRONG!
