@@ -50,7 +50,7 @@ All analysis assume that there is no blocking points in the system.
 
 ## Approach 1
 
-![Timing1](./images/timing1.jpg)
+![Timing1](./images/timing_1.jpg)
 
 Average CPU load = (3)/15= 20%
 
