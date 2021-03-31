@@ -6,11 +6,11 @@
 
 ## System Static Architecture
 
- 	![Static Architecture](./images/staticArch.jpg)
+ 	![Static Architecture](images/staticArch.jpg)
 
 ## System Block Diagram 
 
- 	![Block Diagram](./images/blockDiagram.jpg)
+ 	![Block Diagram](images/blockDiagram.jpg)
 
 ## State Machine for Speed Control Module
 
