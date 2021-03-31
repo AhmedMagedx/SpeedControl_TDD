@@ -1,5 +1,6 @@
 # SpeedControl using TDD concept.
  This project is an implementation of a simple speed control module for vacuum developed using the Test-Driven Development (TDD) concept.
+<<<<<<< HEAD
 
 
 # Design notes:
@@ -76,3 +77,9 @@ Adv: longer life time (! maybe)
 ### Schedulability Check
 
  	![sched](./images/sched2.jpg)
+=======
+ 
+ 
+ 
+![Static Arch. Icon](https://drive.google.com/file/d/1VdPaJxBpAdW1XKWEQCxygcwMlCv8UcXy/view?usp=sharing)
+>>>>>>> 6d76a8e4908d8255f9aba07be06cb8e0acffbe01
