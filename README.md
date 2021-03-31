@@ -6,7 +6,7 @@
 
 ## System Static Architecture
 
- 	![Static Architecture](images/staticArch.jpg)
+ 	![Static Architecture](/images/staticArch.jpg)
 
 ## System Block Diagram 
 
