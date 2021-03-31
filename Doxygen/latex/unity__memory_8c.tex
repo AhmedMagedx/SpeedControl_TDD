@@ -1,0 +1,137 @@
+\hypertarget{unity__memory_8c}{}\doxysection{test/unity/unity\+\_\+memory.c File Reference}
+\label{unity__memory_8c}\index{test/unity/unity\_memory.c@{test/unity/unity\_memory.c}}
+{\ttfamily \#include \char`\"{}unity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}unity\+\_\+memory.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for unity\+\_\+memory.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unity__memory_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structGuardBytes}{Guard\+Bytes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{unity__memory_8c_a3f1b1eff9064dbe426821f93e435fee5}{MALLOC\+\_\+\+DONT\+\_\+\+FAIL}}~-\/1
+\item 
+\#define \mbox{\hyperlink{unity__memory_8c_a9b85a19cfab2e8492f7e5a41035b4e86}{UNITY\+\_\+\+MALLOC\+\_\+\+ALIGNMENT}}~(\mbox{\hyperlink{unity__internals_8h_a5d6a4e5e541e83147b950704019577b4}{UNITY\+\_\+\+POINTER\+\_\+\+WIDTH}} / 8)
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structGuardBytes}{Guard\+Bytes}} \mbox{\hyperlink{unity__memory_8c_a6f4162ac543f92892987e4557edd1f0b}{Guard}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{unity__memory_8c_ad5bf2e255600eb6aef54f95c9a838628}{Unity\+Malloc\+\_\+\+Start\+Test}} (void)
+\item 
+void \mbox{\hyperlink{unity__memory_8c_a44409b47989dd823f395d62ba759032a}{Unity\+Malloc\+\_\+\+End\+Test}} (void)
+\item 
+void \mbox{\hyperlink{unity__memory_8c_a987522fae9a5f45af2cf385a2223bdac}{Unity\+Malloc\+\_\+\+Make\+Malloc\+Fail\+After\+Count}} (int countdown)
+\item 
+void $\ast$ \mbox{\hyperlink{unity__memory_8c_a93ff6fda0f975eb47b8d828bd084f411}{unity\+\_\+malloc}} (size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{unity__memory_8c_a34d61a21a177a63f9681e1d89653cc74}{unity\+\_\+free}} (void $\ast$mem)
+\item 
+void $\ast$ \mbox{\hyperlink{unity__memory_8c_a55e86effa9aaf4a111d6b47684a05369}{unity\+\_\+calloc}} (size\+\_\+t num, size\+\_\+t size)
+\item 
+void $\ast$ \mbox{\hyperlink{unity__memory_8c_a943255616637b00dbcf8e798acf0ab20}{unity\+\_\+realloc}} (void $\ast$old\+Mem, size\+\_\+t size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{unity__memory_8c_a3f1b1eff9064dbe426821f93e435fee5}\label{unity__memory_8c_a3f1b1eff9064dbe426821f93e435fee5}} 
+\index{unity\_memory.c@{unity\_memory.c}!MALLOC\_DONT\_FAIL@{MALLOC\_DONT\_FAIL}}
+\index{MALLOC\_DONT\_FAIL@{MALLOC\_DONT\_FAIL}!unity\_memory.c@{unity\_memory.c}}
+\doxysubsubsection{\texorpdfstring{MALLOC\_DONT\_FAIL}{MALLOC\_DONT\_FAIL}}
+{\footnotesize\ttfamily \#define MALLOC\+\_\+\+DONT\+\_\+\+FAIL~-\/1}
+
+\mbox{\Hypertarget{unity__memory_8c_a9b85a19cfab2e8492f7e5a41035b4e86}\label{unity__memory_8c_a9b85a19cfab2e8492f7e5a41035b4e86}} 
+\index{unity\_memory.c@{unity\_memory.c}!UNITY\_MALLOC\_ALIGNMENT@{UNITY\_MALLOC\_ALIGNMENT}}
+\index{UNITY\_MALLOC\_ALIGNMENT@{UNITY\_MALLOC\_ALIGNMENT}!unity\_memory.c@{unity\_memory.c}}
+\doxysubsubsection{\texorpdfstring{UNITY\_MALLOC\_ALIGNMENT}{UNITY\_MALLOC\_ALIGNMENT}}
+{\footnotesize\ttfamily \#define UNITY\+\_\+\+MALLOC\+\_\+\+ALIGNMENT~(\mbox{\hyperlink{unity__internals_8h_a5d6a4e5e541e83147b950704019577b4}{UNITY\+\_\+\+POINTER\+\_\+\+WIDTH}} / 8)}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{unity__memory_8c_a6f4162ac543f92892987e4557edd1f0b}\label{unity__memory_8c_a6f4162ac543f92892987e4557edd1f0b}} 
+\index{unity\_memory.c@{unity\_memory.c}!Guard@{Guard}}
+\index{Guard@{Guard}!unity\_memory.c@{unity\_memory.c}}
+\doxysubsubsection{\texorpdfstring{Guard}{Guard}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structGuardBytes}{Guard\+Bytes}} \mbox{\hyperlink{unity__memory_8c_a6f4162ac543f92892987e4557edd1f0b}{Guard}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{unity__memory_8c_a55e86effa9aaf4a111d6b47684a05369}\label{unity__memory_8c_a55e86effa9aaf4a111d6b47684a05369}} 
+\index{unity\_memory.c@{unity\_memory.c}!unity\_calloc@{unity\_calloc}}
+\index{unity\_calloc@{unity\_calloc}!unity\_memory.c@{unity\_memory.c}}
+\doxysubsubsection{\texorpdfstring{unity\_calloc()}{unity\_calloc()}}
+{\footnotesize\ttfamily void$\ast$ unity\+\_\+calloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{num,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{unity__memory_8c_a55e86effa9aaf4a111d6b47684a05369_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{unity__memory_8c_a34d61a21a177a63f9681e1d89653cc74}\label{unity__memory_8c_a34d61a21a177a63f9681e1d89653cc74}} 
+\index{unity\_memory.c@{unity\_memory.c}!unity\_free@{unity\_free}}
+\index{unity\_free@{unity\_free}!unity\_memory.c@{unity\_memory.c}}
+\doxysubsubsection{\texorpdfstring{unity\_free()}{unity\_free()}}
+{\footnotesize\ttfamily void unity\+\_\+free (\begin{DoxyParamCaption}\item[{void $\ast$}]{mem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{unity__memory_8c_a93ff6fda0f975eb47b8d828bd084f411}\label{unity__memory_8c_a93ff6fda0f975eb47b8d828bd084f411}} 
+\index{unity\_memory.c@{unity\_memory.c}!unity\_malloc@{unity\_malloc}}
+\index{unity\_malloc@{unity\_malloc}!unity\_memory.c@{unity\_memory.c}}
+\doxysubsubsection{\texorpdfstring{unity\_malloc()}{unity\_malloc()}}
+{\footnotesize\ttfamily void$\ast$ unity\+\_\+malloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{unity__memory_8c_a93ff6fda0f975eb47b8d828bd084f411_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{unity__memory_8c_a943255616637b00dbcf8e798acf0ab20}\label{unity__memory_8c_a943255616637b00dbcf8e798acf0ab20}} 
+\index{unity\_memory.c@{unity\_memory.c}!unity\_realloc@{unity\_realloc}}
+\index{unity\_realloc@{unity\_realloc}!unity\_memory.c@{unity\_memory.c}}
+\doxysubsubsection{\texorpdfstring{unity\_realloc()}{unity\_realloc()}}
+{\footnotesize\ttfamily void$\ast$ unity\+\_\+realloc (\begin{DoxyParamCaption}\item[{void $\ast$}]{old\+Mem,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{unity__memory_8c_a943255616637b00dbcf8e798acf0ab20_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{unity__memory_8c_a44409b47989dd823f395d62ba759032a}\label{unity__memory_8c_a44409b47989dd823f395d62ba759032a}} 
+\index{unity\_memory.c@{unity\_memory.c}!UnityMalloc\_EndTest@{UnityMalloc\_EndTest}}
+\index{UnityMalloc\_EndTest@{UnityMalloc\_EndTest}!unity\_memory.c@{unity\_memory.c}}
+\doxysubsubsection{\texorpdfstring{UnityMalloc\_EndTest()}{UnityMalloc\_EndTest()}}
+{\footnotesize\ttfamily void Unity\+Malloc\+\_\+\+End\+Test (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{unity__memory_8c_a987522fae9a5f45af2cf385a2223bdac}\label{unity__memory_8c_a987522fae9a5f45af2cf385a2223bdac}} 
+\index{unity\_memory.c@{unity\_memory.c}!UnityMalloc\_MakeMallocFailAfterCount@{UnityMalloc\_MakeMallocFailAfterCount}}
+\index{UnityMalloc\_MakeMallocFailAfterCount@{UnityMalloc\_MakeMallocFailAfterCount}!unity\_memory.c@{unity\_memory.c}}
+\doxysubsubsection{\texorpdfstring{UnityMalloc\_MakeMallocFailAfterCount()}{UnityMalloc\_MakeMallocFailAfterCount()}}
+{\footnotesize\ttfamily void Unity\+Malloc\+\_\+\+Make\+Malloc\+Fail\+After\+Count (\begin{DoxyParamCaption}\item[{int}]{countdown }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{unity__memory_8c_ad5bf2e255600eb6aef54f95c9a838628}\label{unity__memory_8c_ad5bf2e255600eb6aef54f95c9a838628}} 
+\index{unity\_memory.c@{unity\_memory.c}!UnityMalloc\_StartTest@{UnityMalloc\_StartTest}}
+\index{UnityMalloc\_StartTest@{UnityMalloc\_StartTest}!unity\_memory.c@{unity\_memory.c}}
+\doxysubsubsection{\texorpdfstring{UnityMalloc\_StartTest()}{UnityMalloc\_StartTest()}}
+{\footnotesize\ttfamily void Unity\+Malloc\+\_\+\+Start\+Test (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+

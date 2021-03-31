@@ -1,0 +1,481 @@
+\hypertarget{FakeMotorTest_8c}{}\doxysection{test/\+Fake\+\_\+\+Motor\+Driver/\+Fake\+Motor\+Test.c File Reference}
+\label{FakeMotorTest_8c}\index{test/Fake\_MotorDriver/FakeMotorTest.c@{test/Fake\_MotorDriver/FakeMotorTest.c}}
+{\ttfamily \#include \char`\"{}../\+Fake\+\_\+\+Switch\+Driver/\+Fake\+Switch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Fake\+Motor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../unity/unity\+\_\+fixture.\+h\char`\"{}}\newline
+Include dependency graph for Fake\+Motor\+Test.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotorTest_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{FakeMotorTest_8c_a7a91a3d98e817096697764cccdd82c72}{SET\+\_\+\+STATE\+\_\+\+TO\+\_\+\+MIN}}
+\item 
+\#define \mbox{\hyperlink{FakeMotorTest_8c_a11b6bbbe26e04489dab492714940685f}{SET\+\_\+\+STATE\+\_\+\+TO\+\_\+\+MED}}
+\item 
+\#define \mbox{\hyperlink{FakeMotorTest_8c_ad9126c939b7b2a344e630a310b52ac62}{SET\+\_\+\+STATE\+\_\+\+TO\+\_\+\+MAX}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{FakeMotorTest_8c_a90e760aefc48ecfc7db7eb4cc167b588}{DEBUG\+\_\+\+PRINT}} (void)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_a7015e14bc6caca28430c014bf1bbc4f6}{TEST\+\_\+\+GROUP}} (Fake\+Motor)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_a32e2c6c3f8f2e8b25c28b1f432a3481d}{TEST\+\_\+\+SETUP}} (Fake\+Motor)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_a7fb4871bcd8716371e2074007ca9480b}{TEST\+\_\+\+TEAR\+\_\+\+DOWN}} (Fake\+Motor)
+\item 
+void \mbox{\hyperlink{FakeMotorTest_8c_a269e3ba1649f02f55f5f9b9e3b724733}{Write\+To\+File}} (const unsigned char)
+\item 
+unsigned char \mbox{\hyperlink{FakeMotorTest_8c_ae6d036d9710e8f36e83d9b0704866707}{Get\+From\+The\+File}} (unsigned char test\+Num)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_a3bcb21c31f7761dd929e4f47686a04c5}{TEST}} (Fake\+Motor, receive\+Angle\+From\+SC\+\_\+\+CLK)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_a7c5b511ae98d3dbc60f0c5fb699bd99c}{TEST}} (Fake\+Motor, receive\+Angle\+From\+SCmodule\+Defualt)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_a760adcc202977be25f107fbb2149b043}{TEST}} (Fake\+Motor, from\+Med\+To\+Max\+With\+PV)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_ab48d3b28317d49fc917527c8f840e201}{TEST}} (Fake\+Motor, no\+Change\+When\+PVbutton\+While\+Max)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_acf243ee0a4b9a973952e144d1a1bed4c}{TEST}} (Fake\+Motor, no\+Change\+When\+Pbutton\+And\+Invalid\+Time\+While\+Max)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_ad2c7ad0dbbba2ca56201256146511d80}{TEST}} (Fake\+Motor, From\+Max\+To\+Med\+When\+Pbutton\+And\+Time30)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_a2f190ae91845aa3a0a9b4ea2694f8fe3}{TEST}} (Fake\+Motor, From\+Med\+To\+Min\+When\+Pbutton\+And\+Time31)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_a3d41e788f2f53b87010feedf5ad855c4}{TEST}} (Fake\+Motor, no\+Change\+When\+Pbutton\+And\+Valid\+Time\+While\+Min)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_a0bc7ce32c5befc6bf68f5aba4539ca95}{TEST}} (Fake\+Motor, from\+Min\+To\+Med\+With\+PV)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_ad2d367e7235089abab26aa6960b1fd6d}{TEST}} (Fake\+Motor, from\+Max\+To\+Med\+With\+MV)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_a1872fbdf96b8137eebe096b8234e3ee3}{TEST}} (Fake\+Motor, from\+Med\+To\+Min\+With\+MV)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_ac95fbb5021ecf98fd76ba1ea0e0a43bc}{TEST}} (Fake\+Motor, no\+Change\+When\+MVbutton\+While\+Min)
+\item 
+\mbox{\hyperlink{FakeMotorTest_8c_affd02a73d5c13ebb0fd6c6bb761b0f1f}{TEST\+\_\+\+GROUP\+\_\+\+RUNNER}} (Fake\+Motor)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3}{Speed\+State\+\_\+t}} \mbox{\hyperlink{FakeMotorTest_8c_a6c7f197c16402d9af9d2377ccf9a5b39}{Speed\+State}}
+\item 
+\mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} \mbox{\hyperlink{FakeMotorTest_8c_a2d6017d3547b6b6a031aae300b651011}{PV\+\_\+\+State}}
+\item 
+\mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} \mbox{\hyperlink{FakeMotorTest_8c_a95a4f7e129339fdbb15fadc0b9c0c2e1}{MV\+\_\+\+State}}
+\item 
+\mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} \mbox{\hyperlink{FakeMotorTest_8c_aa18423a1ef5b4cd8d73c80a7fff13dac}{P\+\_\+\+State}}
+\item 
+unsigned char \mbox{\hyperlink{FakeMotorTest_8c_a8c5bd60a7cc25583803ffd2ced7f5952}{Time\+Pressed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{FakeMotorTest_8c_ad9126c939b7b2a344e630a310b52ac62}\label{FakeMotorTest_8c_ad9126c939b7b2a344e630a310b52ac62}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!SET\_STATE\_TO\_MAX@{SET\_STATE\_TO\_MAX}}
+\index{SET\_STATE\_TO\_MAX@{SET\_STATE\_TO\_MAX}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{SET\_STATE\_TO\_MAX}{SET\_STATE\_TO\_MAX}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+STATE\+\_\+\+TO\+\_\+\+MAX}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                        \mbox{\hyperlink{SpeedControlModule_8c_a41ab8d558d35b4d5fa58dbd8dd8a6846}{SpeedControl\_init}}();\(\backslash\)}
+\DoxyCodeLine{                        FAKE\_SW\_setSwState(\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa6780c6e6d1cdb21fe9193681a6e228d5}{PV\_switch}}, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7ae07e75c91d96406b9a19d47ac31518e9}{SW\_PRESSED}});\(\backslash\)}
+\DoxyCodeLine{                        FAKE\_SW\_setSwState(\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208faa14fe4aabe0e3373e09a5dd8ce57a5ca}{MV\_switch}}, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7aa6ecace857f42b47cc7d19d25087caf3}{SW\_RELEASED}});\(\backslash\)}
+\DoxyCodeLine{                        FAKE\_SW\_setSwState(\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa8a0492d8d67dcbf1a2c83adcf7b7a00e}{P\_switch}}, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7aa6ecace857f42b47cc7d19d25087caf3}{SW\_RELEASED}});\(\backslash\)}
+\DoxyCodeLine{                        SpeedControl\_update()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{FakeMotorTest_8c_a11b6bbbe26e04489dab492714940685f}\label{FakeMotorTest_8c_a11b6bbbe26e04489dab492714940685f}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!SET\_STATE\_TO\_MED@{SET\_STATE\_TO\_MED}}
+\index{SET\_STATE\_TO\_MED@{SET\_STATE\_TO\_MED}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{SET\_STATE\_TO\_MED}{SET\_STATE\_TO\_MED}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+STATE\+\_\+\+TO\+\_\+\+MED}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                        \mbox{\hyperlink{SpeedControlModule_8c_a41ab8d558d35b4d5fa58dbd8dd8a6846}{SpeedControl\_init}}();\(\backslash\)}
+\DoxyCodeLine{                        SpeedControl\_update()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{FakeMotorTest_8c_a7a91a3d98e817096697764cccdd82c72}\label{FakeMotorTest_8c_a7a91a3d98e817096697764cccdd82c72}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!SET\_STATE\_TO\_MIN@{SET\_STATE\_TO\_MIN}}
+\index{SET\_STATE\_TO\_MIN@{SET\_STATE\_TO\_MIN}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{SET\_STATE\_TO\_MIN}{SET\_STATE\_TO\_MIN}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+STATE\+\_\+\+TO\+\_\+\+MIN}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                        \mbox{\hyperlink{SpeedControlModule_8c_a41ab8d558d35b4d5fa58dbd8dd8a6846}{SpeedControl\_init}}();\(\backslash\)}
+\DoxyCodeLine{                        FAKE\_SW\_setSwState(\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa6780c6e6d1cdb21fe9193681a6e228d5}{PV\_switch}}, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7aa6ecace857f42b47cc7d19d25087caf3}{SW\_RELEASED}});\(\backslash\)}
+\DoxyCodeLine{                        FAKE\_SW\_setSwState(\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208faa14fe4aabe0e3373e09a5dd8ce57a5ca}{MV\_switch}}, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7ae07e75c91d96406b9a19d47ac31518e9}{SW\_PRESSED}} );\(\backslash\)}
+\DoxyCodeLine{                        FAKE\_SW\_setSwState(\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208fa8a0492d8d67dcbf1a2c83adcf7b7a00e}{P\_switch}},  \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7aa6ecace857f42b47cc7d19d25087caf3}{SW\_RELEASED}});\(\backslash\)}
+\DoxyCodeLine{                        SpeedControl\_update()}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{FakeMotorTest_8c_a90e760aefc48ecfc7db7eb4cc167b588}\label{FakeMotorTest_8c_a90e760aefc48ecfc7db7eb4cc167b588}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!DEBUG\_PRINT@{DEBUG\_PRINT}}
+\index{DEBUG\_PRINT@{DEBUG\_PRINT}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_PRINT()}{DEBUG\_PRINT()}}
+{\footnotesize\ttfamily void DEBUG\+\_\+\+PRINT (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{FakeMotorTest_8c_ae6d036d9710e8f36e83d9b0704866707}\label{FakeMotorTest_8c_ae6d036d9710e8f36e83d9b0704866707}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!GetFromTheFile@{GetFromTheFile}}
+\index{GetFromTheFile@{GetFromTheFile}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{GetFromTheFile()}{GetFromTheFile()}}
+{\footnotesize\ttfamily static unsigned char Get\+From\+The\+File (\begin{DoxyParamCaption}\item[{unsigned char}]{test\+Num }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{FakeMotorTest_8c_ae6d036d9710e8f36e83d9b0704866707_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{FakeMotorTest_8c_ae6d036d9710e8f36e83d9b0704866707_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_ad2c7ad0dbbba2ca56201256146511d80}\label{FakeMotorTest_8c_ad2c7ad0dbbba2ca56201256146511d80}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/12]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{,  }\item[{From\+Max\+To\+Med\+When\+Pbutton\+And\+Time30}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: Current angle 10 (max) and p pressed with time 30}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: FAKE\+\_\+\+MOTOR\+\_\+update are called}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: the angle should be 90}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotorTest_8c_ad2c7ad0dbbba2ca56201256146511d80_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_ad2d367e7235089abab26aa6960b1fd6d}\label{FakeMotorTest_8c_ad2d367e7235089abab26aa6960b1fd6d}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/12]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{,  }\item[{from\+Max\+To\+Med\+With\+MV}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: Current angle 90 (med) and p pressed with time larger than 30}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: FAKE\+\_\+\+MOTOR\+\_\+update are called}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: the angle should be 140}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotorTest_8c_ad2d367e7235089abab26aa6960b1fd6d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_a760adcc202977be25f107fbb2149b043}\label{FakeMotorTest_8c_a760adcc202977be25f107fbb2149b043}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/12]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{,  }\item[{from\+Med\+To\+Max\+With\+PV}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: Current angle 90 (med) and SCmodule has recentlly updated the angle}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: FAKE\+\_\+\+MOTOR\+\_\+update are called}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: the new angle should be written to the file}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotorTest_8c_a760adcc202977be25f107fbb2149b043_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_a2f190ae91845aa3a0a9b4ea2694f8fe3}\label{FakeMotorTest_8c_a2f190ae91845aa3a0a9b4ea2694f8fe3}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/12]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{,  }\item[{From\+Med\+To\+Min\+When\+Pbutton\+And\+Time31}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: Current angle 90 (med) and p pressed with time larger than 30}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: FAKE\+\_\+\+MOTOR\+\_\+update are called}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: the angle should be 140}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotorTest_8c_a2f190ae91845aa3a0a9b4ea2694f8fe3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_a1872fbdf96b8137eebe096b8234e3ee3}\label{FakeMotorTest_8c_a1872fbdf96b8137eebe096b8234e3ee3}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/12]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{,  }\item[{from\+Med\+To\+Min\+With\+MV}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: Current angle 90 (med) and p pressed with time larger than 30}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: FAKE\+\_\+\+MOTOR\+\_\+update are called}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: the angle should be 140}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotorTest_8c_a1872fbdf96b8137eebe096b8234e3ee3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_a0bc7ce32c5befc6bf68f5aba4539ca95}\label{FakeMotorTest_8c_a0bc7ce32c5befc6bf68f5aba4539ca95}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/12]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{,  }\item[{from\+Min\+To\+Med\+With\+PV}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: Current angle 90 (med) and p pressed with time larger than 30}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: FAKE\+\_\+\+MOTOR\+\_\+update are called}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: the angle should be 140}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotorTest_8c_a0bc7ce32c5befc6bf68f5aba4539ca95_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_ac95fbb5021ecf98fd76ba1ea0e0a43bc}\label{FakeMotorTest_8c_ac95fbb5021ecf98fd76ba1ea0e0a43bc}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/12]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{,  }\item[{no\+Change\+When\+MVbutton\+While\+Min}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: Current angle 90 (med) and p pressed with time larger than 30}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: FAKE\+\_\+\+MOTOR\+\_\+update are called}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: the angle should be 140}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotorTest_8c_ac95fbb5021ecf98fd76ba1ea0e0a43bc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_acf243ee0a4b9a973952e144d1a1bed4c}\label{FakeMotorTest_8c_acf243ee0a4b9a973952e144d1a1bed4c}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/12]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{,  }\item[{no\+Change\+When\+Pbutton\+And\+Invalid\+Time\+While\+Max}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: Current angle 10 (max) and p pressed with time less 30}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: FAKE\+\_\+\+MOTOR\+\_\+update are called}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: the angle should still be written 10.}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotorTest_8c_acf243ee0a4b9a973952e144d1a1bed4c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_a3d41e788f2f53b87010feedf5ad855c4}\label{FakeMotorTest_8c_a3d41e788f2f53b87010feedf5ad855c4}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/12]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{,  }\item[{no\+Change\+When\+Pbutton\+And\+Valid\+Time\+While\+Min}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: Current angle 90 (med) and p pressed with time larger than 30}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: FAKE\+\_\+\+MOTOR\+\_\+update are called}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: the angle should be 140}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotorTest_8c_a3d41e788f2f53b87010feedf5ad855c4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_ab48d3b28317d49fc917527c8f840e201}\label{FakeMotorTest_8c_ab48d3b28317d49fc917527c8f840e201}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/12]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{,  }\item[{no\+Change\+When\+PVbutton\+While\+Max}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: Current angle 10 (max) and +V pressed}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: FAKE\+\_\+\+MOTOR\+\_\+update are called}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+: the angle should still be written 10.}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotorTest_8c_ab48d3b28317d49fc917527c8f840e201_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_a3bcb21c31f7761dd929e4f47686a04c5}\label{FakeMotorTest_8c_a3bcb21c31f7761dd929e4f47686a04c5}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [11/12]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{,  }\item[{receive\+Angle\+From\+SC\+\_\+\+CLK}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{FakeMotorTest_8c_a3bcb21c31f7761dd929e4f47686a04c5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_a7c5b511ae98d3dbc60f0c5fb699bd99c}\label{FakeMotorTest_8c_a7c5b511ae98d3dbc60f0c5fb699bd99c}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST@{TEST}}
+\index{TEST@{TEST}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [12/12]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{,  }\item[{receive\+Angle\+From\+SCmodule\+Defualt}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyParagraph}{Given \+: Text File to write the angles is exist in the same directory}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{When \+: switches\+Update and SCmodule\+Update are called}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Then \+:}
+
+\end{DoxyParagraph}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeMotorTest_8c_a7c5b511ae98d3dbc60f0c5fb699bd99c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_a7015e14bc6caca28430c014bf1bbc4f6}\label{FakeMotorTest_8c_a7015e14bc6caca28430c014bf1bbc4f6}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST\_GROUP@{TEST\_GROUP}}
+\index{TEST\_GROUP@{TEST\_GROUP}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP()}{TEST\_GROUP()}}
+{\footnotesize\ttfamily TEST\+\_\+\+GROUP (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{FakeMotorTest_8c_affd02a73d5c13ebb0fd6c6bb761b0f1f}\label{FakeMotorTest_8c_affd02a73d5c13ebb0fd6c6bb761b0f1f}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}}
+\index{TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP\_RUNNER()}{TEST\_GROUP\_RUNNER()}}
+{\footnotesize\ttfamily TEST\+\_\+\+GROUP\+\_\+\+RUNNER (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{FakeMotorTest_8c_a32e2c6c3f8f2e8b25c28b1f432a3481d}\label{FakeMotorTest_8c_a32e2c6c3f8f2e8b25c28b1f432a3481d}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST\_SETUP@{TEST\_SETUP}}
+\index{TEST\_SETUP@{TEST\_SETUP}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_SETUP()}{TEST\_SETUP()}}
+{\footnotesize\ttfamily TEST\+\_\+\+SETUP (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{FakeMotorTest_8c_a32e2c6c3f8f2e8b25c28b1f432a3481d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_a7fb4871bcd8716371e2074007ca9480b}\label{FakeMotorTest_8c_a7fb4871bcd8716371e2074007ca9480b}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}}
+\index{TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_TEAR\_DOWN()}{TEST\_TEAR\_DOWN()}}
+{\footnotesize\ttfamily TEST\+\_\+\+TEAR\+\_\+\+DOWN (\begin{DoxyParamCaption}\item[{Fake\+Motor}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{FakeMotorTest_8c_a7fb4871bcd8716371e2074007ca9480b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeMotorTest_8c_a269e3ba1649f02f55f5f9b9e3b724733}\label{FakeMotorTest_8c_a269e3ba1649f02f55f5f9b9e3b724733}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!WriteToFile@{WriteToFile}}
+\index{WriteToFile@{WriteToFile}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{WriteToFile()}{WriteToFile()}}
+{\footnotesize\ttfamily void Write\+To\+File (\begin{DoxyParamCaption}\item[{const unsigned char}]{angle }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{FakeMotorTest_8c_a95a4f7e129339fdbb15fadc0b9c0c2e1}\label{FakeMotorTest_8c_a95a4f7e129339fdbb15fadc0b9c0c2e1}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!MV\_State@{MV\_State}}
+\index{MV\_State@{MV\_State}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{MV\_State}{MV\_State}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} MV\+\_\+\+State\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{FakeMotorTest_8c_aa18423a1ef5b4cd8d73c80a7fff13dac}\label{FakeMotorTest_8c_aa18423a1ef5b4cd8d73c80a7fff13dac}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!P\_State@{P\_State}}
+\index{P\_State@{P\_State}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{P\_State}{P\_State}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} P\+\_\+\+State\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{FakeMotorTest_8c_a2d6017d3547b6b6a031aae300b651011}\label{FakeMotorTest_8c_a2d6017d3547b6b6a031aae300b651011}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!PV\_State@{PV\_State}}
+\index{PV\_State@{PV\_State}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{PV\_State}{PV\_State}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} PV\+\_\+\+State\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{FakeMotorTest_8c_a6c7f197c16402d9af9d2377ccf9a5b39}\label{FakeMotorTest_8c_a6c7f197c16402d9af9d2377ccf9a5b39}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!SpeedState@{SpeedState}}
+\index{SpeedState@{SpeedState}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{SpeedState}{SpeedState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3}{Speed\+State\+\_\+t}} Speed\+State\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{FakeMotorTest_8c_a8c5bd60a7cc25583803ffd2ced7f5952}\label{FakeMotorTest_8c_a8c5bd60a7cc25583803ffd2ced7f5952}} 
+\index{FakeMotorTest.c@{FakeMotorTest.c}!TimePressed@{TimePressed}}
+\index{TimePressed@{TimePressed}!FakeMotorTest.c@{FakeMotorTest.c}}
+\doxysubsubsection{\texorpdfstring{TimePressed}{TimePressed}}
+{\footnotesize\ttfamily unsigned char Time\+Pressed\hspace{0.3cm}{\ttfamily [extern]}}
+

@@ -1,0 +1,6 @@
+<map id="YO_eInit" name="YO_eInit">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,77,83"/>
+<area shape="rect" id="node2" href="$Motor_8c.html#a25fad1a30b17564655fcb96c9f89dc0e" title=" " alt="" coords="141,5,234,32"/>
+<area shape="rect" id="node3" href="$SpeedControlModule_8c.html#a41ab8d558d35b4d5fa58dbd8dd8a6846" title="the module initialization, Set the globals to the defaults." alt="" coords="125,56,249,83"/>
+<area shape="rect" id="node4" href="$Switch_8c.html#a3b94062a0ac3d11c79e06c906a857aa5" title="the initialization function" alt="" coords="139,107,235,133"/>
+</map>

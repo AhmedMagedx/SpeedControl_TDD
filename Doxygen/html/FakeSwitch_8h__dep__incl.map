@@ -1,0 +1,7 @@
+<map id="test/Fake_SwitchDriver/FakeSwitch.h" name="test/Fake_SwitchDriver/FakeSwitch.h">
+<area shape="rect" id="node1" title=" " alt="" coords="272,5,427,47"/>
+<area shape="rect" id="node2" href="$FakeSwitch_8c.html" title=" " alt="" coords="5,95,160,136"/>
+<area shape="rect" id="node3" href="$FakeSwitchTest_8c.html" title=" " alt="" coords="184,95,339,136"/>
+<area shape="rect" id="node4" href="$FakeMotorTest_8c.html" title=" " alt="" coords="363,95,512,136"/>
+<area shape="rect" id="node5" href="$SpeedControlTest_8c.html" title=" " alt="" coords="537,95,730,136"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="SpeedControl_init" name="SpeedControl_init">
+<area shape="rect" id="node1" title="the module initialization, Set the globals to the defaults." alt="" coords="256,52,380,79"/>
+<area shape="rect" id="node2" href="$main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="the main! (nothing more to say)" alt="" coords="5,52,56,79"/>
+<area shape="rect" id="node3" href="$SpeedControlTest_8c.html#ac5416f949cdf59404e07098b533073e9" title=" " alt="" coords="129,27,183,53"/>
+<area shape="rect" id="node4" href="$FakeMotorTest_8c.html#a32e2c6c3f8f2e8b25c28b1f432a3481d" title=" " alt="" coords="104,77,208,104"/>
+<area shape="rect" id="node5" href="$YO_8c.html#a4646ad24f6752da97278b8f6e80234dc" title=" " alt="" coords="120,128,192,155"/>
+</map>

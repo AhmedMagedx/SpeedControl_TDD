@@ -1,0 +1,11 @@
+<map id="source/SwitchDriver/Switch.h" name="source/SwitchDriver/Switch.h">
+<area shape="rect" id="node1" title=" " alt="" coords="285,5,421,47"/>
+<area shape="rect" id="node2" href="$SpeedControlModule_8h.html" title=" " alt="" coords="154,95,339,136"/>
+<area shape="rect" id="node4" href="$main_8c.html" title=" " alt="" coords="5,191,109,218"/>
+<area shape="rect" id="node5" href="$SpeedControlTest_8c.html" title=" " alt="" coords="343,184,537,225"/>
+<area shape="rect" id="node6" href="$FakeSwitch_8h.html" title=" " alt="" coords="561,95,716,136"/>
+<area shape="rect" id="node3" href="$SpeedControlModule_8c.html" title="File containing the implementaion of Speed Control module." alt="" coords="134,184,319,225"/>
+<area shape="rect" id="node7" href="$FakeSwitch_8c.html" title=" " alt="" coords="561,184,716,225"/>
+<area shape="rect" id="node8" href="$FakeSwitchTest_8c.html" title=" " alt="" coords="740,184,895,225"/>
+<area shape="rect" id="node9" href="$FakeMotorTest_8c.html" title=" " alt="" coords="919,184,1068,225"/>
+</map>

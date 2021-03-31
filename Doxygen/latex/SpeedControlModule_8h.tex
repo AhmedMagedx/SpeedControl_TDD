@@ -1,0 +1,139 @@
+\hypertarget{SpeedControlModule_8h}{}\doxysection{source/\+Speed\+Control\+Module/\+Speed\+Control\+Module.h File Reference}
+\label{SpeedControlModule_8h}\index{source/SpeedControlModule/SpeedControlModule.h@{source/SpeedControlModule/SpeedControlModule.h}}
+{\ttfamily \#include \char`\"{}../\+Switch\+Driver/\+Switch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Motor\+Driver/\+Motor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../common/std\+\_\+types.\+h\char`\"{}}\newline
+Include dependency graph for Speed\+Control\+Module.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SpeedControlModule_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SpeedControlModule_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3}{Speed\+State\+\_\+t}} \{ \mbox{\hyperlink{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3a2f1e8f1d7192f0507b6cd1e5e030195e}{MINIMUM}}
+, \mbox{\hyperlink{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3a5340ec7ecef6cc3886684a3bd3450d64}{MEDIUM}}
+, \mbox{\hyperlink{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3a24f18e25b7685d18e1b68d78faa2908c}{MAXIMUM}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{std__types_8h_aecc54e7bb223450c39e49a6b89d7dbd0}{ERROR\+\_\+t}} \mbox{\hyperlink{SpeedControlModule_8h_a41ab8d558d35b4d5fa58dbd8dd8a6846}{Speed\+Control\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em the module initialization, Set the globals to the defaults. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{SpeedControlModule_8h_aeab2387a15bb3ed43a4795e1fb67c59c}{Speed\+Control\+\_\+update}} (void)
+\begin{DoxyCompactList}\small\item\em The main function of the module, this function is supposed to called periodically to update the speed states according to the switches state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3}{Speed\+State\+\_\+t}} \mbox{\hyperlink{SpeedControlModule_8h_a3c00cc92ce5f3650f6eb99ef2052d3f0}{Speed\+Control\+\_\+\+Get\+Speed\+State}} (void)
+\begin{DoxyCompactList}\small\item\em The current Speed State Getter of the Speed\+Control module. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{SpeedControlModule_8h_a3958baa6cabf4c33fc8433c67a051d85}{Speed\+Control\+\_\+\+Get\+Angle}} (void)
+\begin{DoxyCompactList}\small\item\em The current Angle Getter of the Speed\+Control module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3}\label{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3}} 
+\index{SpeedControlModule.h@{SpeedControlModule.h}!SpeedState\_t@{SpeedState\_t}}
+\index{SpeedState\_t@{SpeedState\_t}!SpeedControlModule.h@{SpeedControlModule.h}}
+\doxysubsubsection{\texorpdfstring{SpeedState\_t}{SpeedState\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3}{Speed\+State\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MINIMUM@{MINIMUM}!SpeedControlModule.h@{SpeedControlModule.h}}\index{SpeedControlModule.h@{SpeedControlModule.h}!MINIMUM@{MINIMUM}}}\mbox{\Hypertarget{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3a2f1e8f1d7192f0507b6cd1e5e030195e}\label{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3a2f1e8f1d7192f0507b6cd1e5e030195e}} 
+MINIMUM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MEDIUM@{MEDIUM}!SpeedControlModule.h@{SpeedControlModule.h}}\index{SpeedControlModule.h@{SpeedControlModule.h}!MEDIUM@{MEDIUM}}}\mbox{\Hypertarget{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3a5340ec7ecef6cc3886684a3bd3450d64}\label{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3a5340ec7ecef6cc3886684a3bd3450d64}} 
+MEDIUM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAXIMUM@{MAXIMUM}!SpeedControlModule.h@{SpeedControlModule.h}}\index{SpeedControlModule.h@{SpeedControlModule.h}!MAXIMUM@{MAXIMUM}}}\mbox{\Hypertarget{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3a24f18e25b7685d18e1b68d78faa2908c}\label{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3a24f18e25b7685d18e1b68d78faa2908c}} 
+MAXIMUM&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{SpeedControlModule_8h_a3958baa6cabf4c33fc8433c67a051d85}\label{SpeedControlModule_8h_a3958baa6cabf4c33fc8433c67a051d85}} 
+\index{SpeedControlModule.h@{SpeedControlModule.h}!SpeedControl\_GetAngle@{SpeedControl\_GetAngle}}
+\index{SpeedControl\_GetAngle@{SpeedControl\_GetAngle}!SpeedControlModule.h@{SpeedControlModule.h}}
+\doxysubsubsection{\texorpdfstring{SpeedControl\_GetAngle()}{SpeedControl\_GetAngle()}}
+{\footnotesize\ttfamily unsigned char Speed\+Control\+\_\+\+Get\+Angle (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The current Angle Getter of the Speed\+Control module. 
+
+\begin{DoxyReturn}{Returns}
+unsigned char the current shared angle which is being set at THIS module and used at the motor driver module 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{SpeedControlModule_8h_a3958baa6cabf4c33fc8433c67a051d85_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlModule_8h_a3c00cc92ce5f3650f6eb99ef2052d3f0}\label{SpeedControlModule_8h_a3c00cc92ce5f3650f6eb99ef2052d3f0}} 
+\index{SpeedControlModule.h@{SpeedControlModule.h}!SpeedControl\_GetSpeedState@{SpeedControl\_GetSpeedState}}
+\index{SpeedControl\_GetSpeedState@{SpeedControl\_GetSpeedState}!SpeedControlModule.h@{SpeedControlModule.h}}
+\doxysubsubsection{\texorpdfstring{SpeedControl\_GetSpeedState()}{SpeedControl\_GetSpeedState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{SpeedControlModule_8h_a6c6c5fcfb23f204f785ef1ca68b63ec3}{Speed\+State\+\_\+t}} Speed\+Control\+\_\+\+Get\+Speed\+State (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The current Speed State Getter of the Speed\+Control module. 
+
+\begin{DoxyReturn}{Returns}
+Speed\+State\+\_\+t could be one of the following enumulation ( MINIMUM, MEDIUM, or MAXIMUM) 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{SpeedControlModule_8h_a3c00cc92ce5f3650f6eb99ef2052d3f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlModule_8h_a41ab8d558d35b4d5fa58dbd8dd8a6846}\label{SpeedControlModule_8h_a41ab8d558d35b4d5fa58dbd8dd8a6846}} 
+\index{SpeedControlModule.h@{SpeedControlModule.h}!SpeedControl\_init@{SpeedControl\_init}}
+\index{SpeedControl\_init@{SpeedControl\_init}!SpeedControlModule.h@{SpeedControlModule.h}}
+\doxysubsubsection{\texorpdfstring{SpeedControl\_init()}{SpeedControl\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{std__types_8h_aecc54e7bb223450c39e49a6b89d7dbd0}{ERROR\+\_\+t}} Speed\+Control\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+the module initialization, Set the globals to the defaults. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SpeedControlModule_8h_a41ab8d558d35b4d5fa58dbd8dd8a6846_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{SpeedControlModule_8h_aeab2387a15bb3ed43a4795e1fb67c59c}\label{SpeedControlModule_8h_aeab2387a15bb3ed43a4795e1fb67c59c}} 
+\index{SpeedControlModule.h@{SpeedControlModule.h}!SpeedControl\_update@{SpeedControl\_update}}
+\index{SpeedControl\_update@{SpeedControl\_update}!SpeedControlModule.h@{SpeedControlModule.h}}
+\doxysubsubsection{\texorpdfstring{SpeedControl\_update()}{SpeedControl\_update()}}
+{\footnotesize\ttfamily void Speed\+Control\+\_\+update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The main function of the module, this function is supposed to called periodically to update the speed states according to the switches state. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{SpeedControlModule_8h_aeab2387a15bb3ed43a4795e1fb67c59c_icgraph}
+\end{center}
+\end{figure}

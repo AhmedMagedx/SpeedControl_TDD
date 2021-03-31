@@ -1,0 +1,85 @@
+\hypertarget{YO_8c}{}\doxysection{source/\+Yummy\+OS/\+YO.c File Reference}
+\label{YO_8c}\index{source/YummyOS/YO.c@{source/YummyOS/YO.c}}
+{\ttfamily \#include \char`\"{}YO.\+h\char`\"{}}\newline
+Include dependency graph for YO.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{YO_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{std__types_8h_aecc54e7bb223450c39e49a6b89d7dbd0}{ERROR\+\_\+t}} \mbox{\hyperlink{YO_8c_a4646ad24f6752da97278b8f6e80234dc}{YO\+\_\+e\+Init}} (void)
+\item 
+void \mbox{\hyperlink{YO_8c_a4f23963d16b95588e2f6a5f68c6c988a}{YO\+\_\+v\+Create\+Task}} (void($\ast$p\+Task)(void), const char Minimam\+Stack\+Size, const char priority, const char periodcity\+\_\+ms, const char Initial\+Delay)
+\item 
+void \mbox{\hyperlink{YO_8c_a72fdb246cb0dc4f7ba4405dd99222907}{YO\+\_\+v\+Start\+Scheduler}} (void)
+\begin{DoxyCompactList}\small\item\em periodiclly call the task according to its timing specifications and if no task is supposed to run, it run the LOW\+\_\+\+POWER task \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{YO_8c_a4646ad24f6752da97278b8f6e80234dc}\label{YO_8c_a4646ad24f6752da97278b8f6e80234dc}} 
+\index{YO.c@{YO.c}!YO\_eInit@{YO\_eInit}}
+\index{YO\_eInit@{YO\_eInit}!YO.c@{YO.c}}
+\doxysubsubsection{\texorpdfstring{YO\_eInit()}{YO\_eInit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{std__types_8h_aecc54e7bb223450c39e49a6b89d7dbd0}{ERROR\+\_\+t}} YO\+\_\+e\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{YO_8c_a4646ad24f6752da97278b8f6e80234dc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{YO_8c_a4646ad24f6752da97278b8f6e80234dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{YO_8c_a4f23963d16b95588e2f6a5f68c6c988a}\label{YO_8c_a4f23963d16b95588e2f6a5f68c6c988a}} 
+\index{YO.c@{YO.c}!YO\_vCreateTask@{YO\_vCreateTask}}
+\index{YO\_vCreateTask@{YO\_vCreateTask}!YO.c@{YO.c}}
+\doxysubsubsection{\texorpdfstring{YO\_vCreateTask()}{YO\_vCreateTask()}}
+{\footnotesize\ttfamily void YO\+\_\+v\+Create\+Task (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{p\+Task,  }\item[{const char}]{Minimam\+Stack\+Size,  }\item[{const char}]{priority,  }\item[{const char}]{periodcity\+\_\+ms,  }\item[{const char}]{Initial\+Delay }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Task} & a pointer to the task \\
+\hline
+{\em Minimam\+Stack\+Size} & the minimum stack size based on the task implementation \\
+\hline
+{\em priority} & the priority of the task (the lower the number the higher the priority ) \\
+\hline
+{\em periodcity\+\_\+ms} & the period to recall the task. \\
+\hline
+{\em Initial\+Delay} & to determine the FIRST call time. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{YO_8c_a4f23963d16b95588e2f6a5f68c6c988a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{YO_8c_a72fdb246cb0dc4f7ba4405dd99222907}\label{YO_8c_a72fdb246cb0dc4f7ba4405dd99222907}} 
+\index{YO.c@{YO.c}!YO\_vStartScheduler@{YO\_vStartScheduler}}
+\index{YO\_vStartScheduler@{YO\_vStartScheduler}!YO.c@{YO.c}}
+\doxysubsubsection{\texorpdfstring{YO\_vStartScheduler()}{YO\_vStartScheduler()}}
+{\footnotesize\ttfamily void YO\+\_\+v\+Start\+Scheduler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+periodiclly call the task according to its timing specifications and if no task is supposed to run, it run the LOW\+\_\+\+POWER task 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{YO_8c_a72fdb246cb0dc4f7ba4405dd99222907_icgraph}
+\end{center}
+\end{figure}

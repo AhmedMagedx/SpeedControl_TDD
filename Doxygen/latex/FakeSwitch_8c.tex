@@ -1,0 +1,101 @@
+\hypertarget{FakeSwitch_8c}{}\doxysection{test/\+Fake\+\_\+\+Switch\+Driver/\+Fake\+Switch.c File Reference}
+\label{FakeSwitch_8c}\index{test/Fake\_SwitchDriver/FakeSwitch.c@{test/Fake\_SwitchDriver/FakeSwitch.c}}
+{\ttfamily \#include \char`\"{}Fake\+Switch.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for Fake\+Switch.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{FakeSwitch_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{FakeSwitch_8c_aa53e56faf291178683dcea6a4f225b43}{SWITCH\+\_\+\+TEST\+\_\+get\+Test\+Data}} (\mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} $\ast$PV\+\_\+initial\+\_\+\+SW\+\_\+state, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} $\ast$MV\+\_\+initial\+\_\+\+SW\+\_\+state, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} $\ast$P\+\_\+initial\+\_\+\+SW\+\_\+state, unsigned char $\ast$\mbox{\hyperlink{FakeMotorTest_8c_a8c5bd60a7cc25583803ffd2ced7f5952}{Time\+Pressed}}, unsigned char test\+\_\+num)
+\item 
+void \mbox{\hyperlink{FakeSwitch_8c_ac2822f6df5fba90c6ab0a7f92071dcae}{FAKE\+\_\+\+SW\+\_\+init}} (void)
+\item 
+void \mbox{\hyperlink{FakeSwitch_8c_a1dc26995419178592ac1c7a326166770}{Fake\+\_\+\+SWITCH\+\_\+update}} ()
+\item 
+\mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} \mbox{\hyperlink{FakeSwitch_8c_abc483d8c601ed2ae2e4c61613acef0a6}{FAKE\+\_\+\+SW\+\_\+\+Get\+Sw\+State}} (\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208f}{SWITCH\+\_\+\+NAME\+\_\+t}} Switch\+Name)
+\item 
+void \mbox{\hyperlink{FakeSwitch_8c_af4ca0841e73b00591d01ea87292fd8bb}{FAKE\+\_\+\+SW\+\_\+set\+Sw\+State}} (\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208f}{SWITCH\+\_\+\+NAME\+\_\+t}} Switch\+Name, \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} state)
+\item 
+void \mbox{\hyperlink{FakeSwitch_8c_a01fb831da90ac70335acafa3b89d3e22}{Fake\+\_\+\+SW\+\_\+\+Set\+Time\+Pressed}} (unsigned char Time)
+\item 
+void \mbox{\hyperlink{FakeSwitch_8c_a7d9c999ca891015da6ff36294a855019}{FAKE\+\_\+\+SW\+\_\+destroy}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{FakeSwitch_8c_a7d9c999ca891015da6ff36294a855019}\label{FakeSwitch_8c_a7d9c999ca891015da6ff36294a855019}} 
+\index{FakeSwitch.c@{FakeSwitch.c}!FAKE\_SW\_destroy@{FAKE\_SW\_destroy}}
+\index{FAKE\_SW\_destroy@{FAKE\_SW\_destroy}!FakeSwitch.c@{FakeSwitch.c}}
+\doxysubsubsection{\texorpdfstring{FAKE\_SW\_destroy()}{FAKE\_SW\_destroy()}}
+{\footnotesize\ttfamily void FAKE\+\_\+\+SW\+\_\+destroy (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{FakeSwitch_8c_a7d9c999ca891015da6ff36294a855019_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeSwitch_8c_abc483d8c601ed2ae2e4c61613acef0a6}\label{FakeSwitch_8c_abc483d8c601ed2ae2e4c61613acef0a6}} 
+\index{FakeSwitch.c@{FakeSwitch.c}!FAKE\_SW\_GetSwState@{FAKE\_SW\_GetSwState}}
+\index{FAKE\_SW\_GetSwState@{FAKE\_SW\_GetSwState}!FakeSwitch.c@{FakeSwitch.c}}
+\doxysubsubsection{\texorpdfstring{FAKE\_SW\_GetSwState()}{FAKE\_SW\_GetSwState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} FAKE\+\_\+\+SW\+\_\+\+Get\+Sw\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208f}{SWITCH\+\_\+\+NAME\+\_\+t}}}]{Switch\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{FakeSwitch_8c_ac2822f6df5fba90c6ab0a7f92071dcae}\label{FakeSwitch_8c_ac2822f6df5fba90c6ab0a7f92071dcae}} 
+\index{FakeSwitch.c@{FakeSwitch.c}!FAKE\_SW\_init@{FAKE\_SW\_init}}
+\index{FAKE\_SW\_init@{FAKE\_SW\_init}!FakeSwitch.c@{FakeSwitch.c}}
+\doxysubsubsection{\texorpdfstring{FAKE\_SW\_init()}{FAKE\_SW\_init()}}
+{\footnotesize\ttfamily void FAKE\+\_\+\+SW\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{FakeSwitch_8c_ac2822f6df5fba90c6ab0a7f92071dcae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeSwitch_8c_af4ca0841e73b00591d01ea87292fd8bb}\label{FakeSwitch_8c_af4ca0841e73b00591d01ea87292fd8bb}} 
+\index{FakeSwitch.c@{FakeSwitch.c}!FAKE\_SW\_setSwState@{FAKE\_SW\_setSwState}}
+\index{FAKE\_SW\_setSwState@{FAKE\_SW\_setSwState}!FakeSwitch.c@{FakeSwitch.c}}
+\doxysubsubsection{\texorpdfstring{FAKE\_SW\_setSwState()}{FAKE\_SW\_setSwState()}}
+{\footnotesize\ttfamily void FAKE\+\_\+\+SW\+\_\+set\+Sw\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Switch_8h_ac6a94ebd3e8e4bf39cdf64c661f4208f}{SWITCH\+\_\+\+NAME\+\_\+t}}}]{Switch\+Name,  }\item[{\mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}}}]{state }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeSwitch_8c_af4ca0841e73b00591d01ea87292fd8bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeSwitch_8c_a01fb831da90ac70335acafa3b89d3e22}\label{FakeSwitch_8c_a01fb831da90ac70335acafa3b89d3e22}} 
+\index{FakeSwitch.c@{FakeSwitch.c}!Fake\_SW\_SetTimePressed@{Fake\_SW\_SetTimePressed}}
+\index{Fake\_SW\_SetTimePressed@{Fake\_SW\_SetTimePressed}!FakeSwitch.c@{FakeSwitch.c}}
+\doxysubsubsection{\texorpdfstring{Fake\_SW\_SetTimePressed()}{Fake\_SW\_SetTimePressed()}}
+{\footnotesize\ttfamily void Fake\+\_\+\+SW\+\_\+\+Set\+Time\+Pressed (\begin{DoxyParamCaption}\item[{unsigned char}]{Time }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FakeSwitch_8c_a01fb831da90ac70335acafa3b89d3e22_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{FakeSwitch_8c_a1dc26995419178592ac1c7a326166770}\label{FakeSwitch_8c_a1dc26995419178592ac1c7a326166770}} 
+\index{FakeSwitch.c@{FakeSwitch.c}!Fake\_SWITCH\_update@{Fake\_SWITCH\_update}}
+\index{Fake\_SWITCH\_update@{Fake\_SWITCH\_update}!FakeSwitch.c@{FakeSwitch.c}}
+\doxysubsubsection{\texorpdfstring{Fake\_SWITCH\_update()}{Fake\_SWITCH\_update()}}
+{\footnotesize\ttfamily void Fake\+\_\+\+SWITCH\+\_\+update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{FakeSwitch_8c_aa53e56faf291178683dcea6a4f225b43}\label{FakeSwitch_8c_aa53e56faf291178683dcea6a4f225b43}} 
+\index{FakeSwitch.c@{FakeSwitch.c}!SWITCH\_TEST\_getTestData@{SWITCH\_TEST\_getTestData}}
+\index{SWITCH\_TEST\_getTestData@{SWITCH\_TEST\_getTestData}!FakeSwitch.c@{FakeSwitch.c}}
+\doxysubsubsection{\texorpdfstring{SWITCH\_TEST\_getTestData()}{SWITCH\_TEST\_getTestData()}}
+{\footnotesize\ttfamily void SWITCH\+\_\+\+TEST\+\_\+get\+Test\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} $\ast$}]{PV\+\_\+initial\+\_\+\+SW\+\_\+state,  }\item[{\mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} $\ast$}]{MV\+\_\+initial\+\_\+\+SW\+\_\+state,  }\item[{\mbox{\hyperlink{Switch_8h_add2c37d13e3ac54d516471310b237ac7}{SWITCH\+\_\+\+STATE\+\_\+t}} $\ast$}]{P\+\_\+initial\+\_\+\+SW\+\_\+state,  }\item[{unsigned char $\ast$}]{Time\+Pressed,  }\item[{unsigned char}]{test\+\_\+num }\end{DoxyParamCaption})}
+

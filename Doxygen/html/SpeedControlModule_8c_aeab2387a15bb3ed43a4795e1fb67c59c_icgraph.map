@@ -1,0 +1,5 @@
+<map id="SpeedControl_update" name="SpeedControl_update">
+<area shape="rect" id="node1" title="The main function of the module, this function is supposed to called periodically to update the speed..." alt="" coords="108,31,255,57"/>
+<area shape="rect" id="node2" href="$main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="the main! (nothing more to say)" alt="" coords="7,5,58,32"/>
+<area shape="rect" id="node3" href="$FakeMotorTest_8c.html#a7c5b511ae98d3dbc60f0c5fb699bd99c" title=" " alt="" coords="5,56,60,83"/>
+</map>

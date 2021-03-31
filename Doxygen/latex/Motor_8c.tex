@@ -1,0 +1,99 @@
+\hypertarget{Motor_8c}{}\doxysection{source/\+Motor\+Driver/\+Motor.c File Reference}
+\label{Motor_8c}\index{source/MotorDriver/Motor.c@{source/MotorDriver/Motor.c}}
+{\ttfamily \#include \char`\"{}Motor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../common/\+STD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+Include dependency graph for Motor.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{Motor_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Motor_8c_a0b8af82a04a36e8bc6b78f97040433e5}{RATIO\+\_\+\+MAXSPEED}}~(100/100)
+\item 
+\#define \mbox{\hyperlink{Motor_8c_af722702ad538a6f2d79f67782249b58a}{RATIO\+\_\+\+MEDSPEED}}~(100/100)
+\item 
+\#define \mbox{\hyperlink{Motor_8c_a4d8af4a1744276c7922bbcef0da0c475}{RATIO\+\_\+\+MINSPEED}}~(100/100)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{std__types_8h_aecc54e7bb223450c39e49a6b89d7dbd0}{ERROR\+\_\+t}} \mbox{\hyperlink{Motor_8c_a25fad1a30b17564655fcb96c9f89dc0e}{MOTOR\+\_\+init}} (void)
+\item 
+void \mbox{\hyperlink{Motor_8c_a64d0c18e8a43ea0c66a2ba245735c9db}{MOTOR\+\_\+\+Deinit}} (void)
+\item 
+void \mbox{\hyperlink{Motor_8c_a38e9c5fb5becd4185b37ad0d5ae6d556}{MOTOR\+\_\+update}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \mbox{\hyperlink{Motor_8c_a654b507aa85f349f4a7f883053eef4e6}{MOTOR\+\_\+\+Set\+Shared\+Angle\+Getter}} )(unsigned char($\ast$p\+Get\+Shared\+Angle)(void)) = \mbox{\hyperlink{FakeMotor_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Motor_8c_a0b8af82a04a36e8bc6b78f97040433e5}\label{Motor_8c_a0b8af82a04a36e8bc6b78f97040433e5}} 
+\index{Motor.c@{Motor.c}!RATIO\_MAXSPEED@{RATIO\_MAXSPEED}}
+\index{RATIO\_MAXSPEED@{RATIO\_MAXSPEED}!Motor.c@{Motor.c}}
+\doxysubsubsection{\texorpdfstring{RATIO\_MAXSPEED}{RATIO\_MAXSPEED}}
+{\footnotesize\ttfamily \#define RATIO\+\_\+\+MAXSPEED~(100/100)}
+
+\mbox{\Hypertarget{Motor_8c_af722702ad538a6f2d79f67782249b58a}\label{Motor_8c_af722702ad538a6f2d79f67782249b58a}} 
+\index{Motor.c@{Motor.c}!RATIO\_MEDSPEED@{RATIO\_MEDSPEED}}
+\index{RATIO\_MEDSPEED@{RATIO\_MEDSPEED}!Motor.c@{Motor.c}}
+\doxysubsubsection{\texorpdfstring{RATIO\_MEDSPEED}{RATIO\_MEDSPEED}}
+{\footnotesize\ttfamily \#define RATIO\+\_\+\+MEDSPEED~(100/100)}
+
+\mbox{\Hypertarget{Motor_8c_a4d8af4a1744276c7922bbcef0da0c475}\label{Motor_8c_a4d8af4a1744276c7922bbcef0da0c475}} 
+\index{Motor.c@{Motor.c}!RATIO\_MINSPEED@{RATIO\_MINSPEED}}
+\index{RATIO\_MINSPEED@{RATIO\_MINSPEED}!Motor.c@{Motor.c}}
+\doxysubsubsection{\texorpdfstring{RATIO\_MINSPEED}{RATIO\_MINSPEED}}
+{\footnotesize\ttfamily \#define RATIO\+\_\+\+MINSPEED~(100/100)}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Motor_8c_a64d0c18e8a43ea0c66a2ba245735c9db}\label{Motor_8c_a64d0c18e8a43ea0c66a2ba245735c9db}} 
+\index{Motor.c@{Motor.c}!MOTOR\_Deinit@{MOTOR\_Deinit}}
+\index{MOTOR\_Deinit@{MOTOR\_Deinit}!Motor.c@{Motor.c}}
+\doxysubsubsection{\texorpdfstring{MOTOR\_Deinit()}{MOTOR\_Deinit()}}
+{\footnotesize\ttfamily void MOTOR\+\_\+\+Deinit (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Motor_8c_a25fad1a30b17564655fcb96c9f89dc0e}\label{Motor_8c_a25fad1a30b17564655fcb96c9f89dc0e}} 
+\index{Motor.c@{Motor.c}!MOTOR\_init@{MOTOR\_init}}
+\index{MOTOR\_init@{MOTOR\_init}!Motor.c@{Motor.c}}
+\doxysubsubsection{\texorpdfstring{MOTOR\_init()}{MOTOR\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{std__types_8h_aecc54e7bb223450c39e49a6b89d7dbd0}{ERROR\+\_\+t}} MOTOR\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{Motor_8c_a25fad1a30b17564655fcb96c9f89dc0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Motor_8c_a38e9c5fb5becd4185b37ad0d5ae6d556}\label{Motor_8c_a38e9c5fb5becd4185b37ad0d5ae6d556}} 
+\index{Motor.c@{Motor.c}!MOTOR\_update@{MOTOR\_update}}
+\index{MOTOR\_update@{MOTOR\_update}!Motor.c@{Motor.c}}
+\doxysubsubsection{\texorpdfstring{MOTOR\_update()}{MOTOR\_update()}}
+{\footnotesize\ttfamily void MOTOR\+\_\+update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{Motor_8c_a38e9c5fb5becd4185b37ad0d5ae6d556_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Motor_8c_a654b507aa85f349f4a7f883053eef4e6}\label{Motor_8c_a654b507aa85f349f4a7f883053eef4e6}} 
+\index{Motor.c@{Motor.c}!MOTOR\_SetSharedAngleGetter@{MOTOR\_SetSharedAngleGetter}}
+\index{MOTOR\_SetSharedAngleGetter@{MOTOR\_SetSharedAngleGetter}!Motor.c@{Motor.c}}
+\doxysubsubsection{\texorpdfstring{MOTOR\_SetSharedAngleGetter}{MOTOR\_SetSharedAngleGetter}}
+{\footnotesize\ttfamily void($\ast$ MOTOR\+\_\+\+Set\+Shared\+Angle\+Getter) (unsigned char($\ast$p\+Get\+Shared\+Angle)(void)) (\begin{DoxyParamCaption}\item[{unsigned char($\ast$)(void)}]{p\+Get\+Shared\+Angle }\end{DoxyParamCaption}) = \mbox{\hyperlink{FakeMotor_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}}
+
