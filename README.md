@@ -79,6 +79,13 @@ Adv: longer life time (! maybe)
 ![sched](./images/sched2.jpg)
 
 
+
+# Result:
+
+![Result](./images/rslt.png)
+
+
+
 IMPORTANT NOTE:
 I`M TOTALLY NOT SURE ABOUT ANYTHING WRITTEN ABOVE,
 THEY MAYBE RIGHT OR WRONG!
