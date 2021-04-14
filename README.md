@@ -82,7 +82,8 @@ Adv: longer life time (! maybe)
 
 # Result:
 
-![Result](./images/rslt.png)
+
+![Result](./images/rslt.jpg)
 
 
 
