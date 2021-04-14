@@ -19,7 +19,7 @@
 
 
 ## Sequence diagram for setting the callback.
-in the real and fake motor, so as to let the SpeedControl module set the callback in both the Real and Fake Motor module without knowing the existance of the the fake motor module:
+in the real and fake motor, so as to let the SpeedControl module set the callback in both the Real and Fake Motor module without knowing the existance of the fake motor module:
 
 ![sequance](./images/sequance.jpg)
 
@@ -79,6 +79,36 @@ Adv: longer life time (! maybe)
 ![sched](./images/sched2.jpg)
 
 
+# Testing Notes:
+
+## 1-state coverage
+
+
+![1statecover](./images/1statecover.jpg)
+
+
+## EP for time
+
+![EPfortime](./images/epTime.jpg)
+
+
+## EP for switches state
+
+![EPSwitches](./images/EPSwitches.jpg)
+
+
+## EP composing with invalid
+
+![EP composing with invalid](./images/EPComposingInvalid.jpg)
+
+
+## BVA for time
+
+![BVA for time](./images/BVATime.jpg)
+
+
+## EP for switch names
+![EP for switch names](./images/EPSwitch.jpg)
 
 # Result:
 
